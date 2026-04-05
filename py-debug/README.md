@@ -38,6 +38,13 @@ Batch запрос (до 10 параметров за раз):
 pip install pyserial
 ```
 
+принудительно
+```bash
+python3 -m pip install pyserial --break-system-packages
+
+```
+
+
 K+DCAN кабель (FTDI FT232RL). Переключатель **ВЛЕВО** (K-Line).
 
 ## Файлы

@@ -85,9 +85,11 @@ PRESETS={
 }
 
 # ═════════ KWP2000 ═════════
-def xcs(d):
+# Checksum: ADD (sum of bytes & 0xFF), NOT XOR!
+# Source: EdiabasLib/EdInterfaceBase.cs CalcChecksumBmwFast()
+def cs_add(d):
     r=0
-    for b in d: r^=b
+    for b in d: r=(r+b)&0xFF
     return r
 
 class KWP:
@@ -96,17 +98,46 @@ class KWP:
     def _txrx(s,pay,to=2.0):
         n=len(pay)
         hdr=bytes([0x80|n,ECU,TST]) if n<=63 else bytes([0x80,ECU,TST,n])
-        fr=hdr+pay; fr+=bytes([xcs(fr)])
+        fr=hdr+pay; fr+=bytes([cs_add(fr)])
         s.port.reset_input_buffer()
         log.debug(f"TX[{len(fr)}]: {fr.hex(' ')}")
         s.port.write(fr); s.port.flush()
-        time.sleep(0.02); s.port.read(len(fr))
+        # Read K-Line echo (single-wire bus echoes our TX)
+        t0=time.time(); echo=b''
+        while len(echo)<len(fr) and time.time()-t0<0.5:
+            d=s.port.read(len(fr)-len(echo))
+            if d: echo+=d
+        if echo: log.debug(f"Echo[{len(echo)}]: {echo.hex(' ')}")
+        # Read response header (4 bytes min)
         t0=time.time(); buf=b''
-        while len(buf)<1 and time.time()-t0<to: buf+=s.port.read(1)
-        if not buf: return None
-        dl=buf[0]&0x3F; need=2+dl+1
-        while len(buf)<1+need and time.time()-t0<to: buf+=s.port.read(need-(len(buf)-1))
+        while len(buf)<4 and time.time()-t0<to:
+            d=s.port.read(4-len(buf))
+            if d: buf+=d
+        if len(buf)<4: return None
+        if (buf[0]&0xC0)!=0x80:
+            log.debug(f"Bad hdr: {buf.hex(' ')}"); return None
+        # Calc telegram length (EdiabasLib TelLengthBmwFast)
+        dl=buf[0]&0x3F
+        if dl==0:
+            if len(buf)>3 and buf[3]==0:
+                while len(buf)<6 and time.time()-t0<to:
+                    d=s.port.read(6-len(buf))
+                    if d: buf+=d
+                if len(buf)<6: return None
+                tl=(buf[4]<<8)+buf[5]+6
+            else:
+                tl=buf[3]+4 if len(buf)>3 else 4
+        else:
+            tl=dl+3
+        need=tl+1  # +1 for checksum byte
+        while len(buf)<need and time.time()-t0<to:
+            d=s.port.read(need-len(buf))
+            if d: buf+=d
         log.debug(f"RX[{len(buf)}]: {buf.hex(' ')}")
+        if len(buf)>=need:
+            calc=cs_add(buf[:tl])
+            if calc!=buf[tl]:
+                log.debug(f"CS fail: calc=0x{calc:02X} got=0x{buf[tl]:02X}")
         return buf
 
     def start(s):
@@ -256,8 +287,19 @@ def main():
         if getattr(a,n,False): keys,_=PRESETS[n]; pn=n; tb=(n=='turbo'); break
     if a.params: keys=[x.strip() for x in a.params.split(',')]
     if not any([a.ident,a.faults,a.clear_faults,keys,a.all]): ap.print_help(); return
-    ser=serial.Serial(a.port,a.baud,8,serial.PARITY_EVEN,1,timeout=0.5)
-    if a.fast_init: ser.break_condition=True;time.sleep(.025);ser.break_condition=False;time.sleep(.025)
+    # EdiabasLib: KWP2000 BMW (0x010C) uses parity=NONE (8N1), NOT 8E1!
+    ser=serial.Serial(a.port,a.baud,8,serial.PARITY_NONE,1,timeout=0.5)
+    # K+DCAN cable: DTR selects mode! DTR=false→K-Line, DTR=true→D-CAN
+    # pyserial defaults DTR=true → WRONG! Must set false for K-Line
+    ser.dtr=False
+    ser.rts=False
+    time.sleep(0.1)  # let cable settle after mode switch
+    # Fast-init: only if needed (EdiabasLib skips it for KWP2000 BMW)
+    if a.fast_init:
+        ser.dtr=True
+        ser.break_condition=True;time.sleep(.025)
+        ser.break_condition=False;time.sleep(.025)
+        ser.dtr=False
     ser.reset_input_buffer()
     try:
         import subprocess; subprocess.run(['bash','-c',f'echo 1>/sys/bus/usb-serial/devices/{a.port.split("/")[-1]}/latency_timer'],capture_output=True,timeout=2)

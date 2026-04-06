@@ -52,6 +52,9 @@ K+DCAN кабель (FTDI FT232RL). Переключатель **ВЛЕВО** (K
 ## Быстрый старт
 
 ```bash
+sudo python3 kline_test.py /dev/ttyUSB0
+```
+```bash
 # Список всех параметров и пресетов
 python3 bmw_dde5_v2.py --list
 

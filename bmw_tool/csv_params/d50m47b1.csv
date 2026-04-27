@@ -1,0 +1,378 @@
+addr,name,size,factor_a,factor_b,unit,format,description
+0x0004,CoEng_rTrq,2,0.393699,0.000000,%,8.4f,Verhältnis aktuelles Moment zu Maximalmoment
+0x0005,CTSCD_tClntLin,2,1.000240,-41.084307,deg C,8.3f,linearisierter Wert aus HWK vorm Aufruf der Übergangsfunktion
+0x000B,BPSCD_pLin,2,10.002401,0.000000,hPa,8.2f,Mittelere Ladedruck-Wert (liniarisiert)
+0x000C,Eng_nAvrg_Carb,2,0.250000,0.000000,rpm,8.2f,mittlere Motordrehzahl
+0x000D,VSSCD_vSensVal,2,0.999001,0.000000,km/h,8.4f,Vehicle speed sensed value
+0x000F,AFSCD_tAir_mp,2,1.000240,-41.084307,deg C,8.3f,linearisierter Wert aus HWK vorm Aufruf der Übergangsfunktion
+0x0010,AFSCD_dmAirRawPerTime,2,0.036001,0.000000,Kg/h,8.3f,LMM Luftmassenmesser HFM
+0x0021,DSMDur_ctDfctDur1_Carb,2,1.000000,0.000000,-,8.2f,Wert Fehlerdauerzähler
+0x0050,AFSCD_mAirPerCyl,2,0.048829,-1599.971484,mg/Hub,8.3f,angesaugte Luftmasse pro Zylinder
+0x0051,AFSCD_rAir,2,0.010000,0.000000,%,8.4f,duty cycle of the air temparature signal
+0x0052,AFSCD_dmAirPerTime,2,0.048829,-1599.971484,Kg/h,8.3f,HFM Luftmassenstrom
+0x0053,PFlt_lSum_mp,2,1.000000,0.000000,m,13.2f,ges. gefahrene Strecke bei der letzten erfolgr. Regeneration
+0x0054,PFlt_pDiff,2,0.125002,0.000000,hPa,8.2f,Differenzdruck über Partikelfilter
+0x0055,InjCtl_qCurr,2,0.003052,-99.998993,mg/cyc,8.4f,Einspritzmenge aktueller Wert
+0x0059,InjCtl_qSetUnBal,2,0.003052,-99.998993,mg/cyc,8.4f,Einspritzmenge Sollwert ohne Mengenausgleichsregelung
+0x005B,FTSCD_tFuel,2,0.016787,-50.138440,deg C,8.3f,Kraftstofftemperatur
+0x005F,APPCD_rLinAPP1,2,0.003052,0.000000,%,8.4f,linearisierter APP1
+0x0060,APPCD_rLinAPP2,2,0.003052,0.000000,%,8.4f,linearisierter APP2
+0x0061,GlwCtl_stLampOut,2,1.000000,0.000000,-,5.1f,Zustand der Glühanzeige
+0x0062,GlwCtl_stActrOut,2,1.000000,0.000000,-,5.1f,Glow control actuator relay output
+0x0064,APPCD_uRawAPP1,2,0.000611,0.000000,V,8.1f,Fahrpedal 1 Position Rohwert
+0x0065,APPCD_uRawAPP2,2,0.000611,0.000000,V,8.1f,Fahrpedal 2 Position Rohwert
+0x0066,APPCD_rFlt,2,0.003052,0.000000,%,8.4f,gefiltertes Pedalwertgebersignal
+0x0068,PFlt_mSot,2,0.010000,0.000000,g,8.4f,Rußmasse im Partikelfilter
+0x006C,PFlt_mAshOil_mp,2,0.010000,0.000000,g,8.4f,Ölaschenmasse
+0x006D,PFlt_numEngPOp_mp,2,1.000000,0.000000,-,5.1f,Regeneriermaßnahme aufgrund PFlt- und Motorzustand
+0x006E,APSCD_pVal,2,0.125002,0.000000,hPa,8.2f,Atmosphärendruck
+0x006F,APSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Rohspannung ADC-Signal Atmosphärendruck
+0x0070,PFlt_numRgn_mp,2,1.000000,0.000000,-,5.1f,gesamte Regenerationsanforderung
+0x0073,HWEMon_numRecovery,2,1.000000,0.000000,-,8.2f,Herkunft des letzten Reset ( >0 = Recovery )
+0x007A,EGRCD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zur Endstufenansteuerung
+0x007B,BPACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zur Endstufenansteuerung
+0x007C,GlwCtl_rPwrOut,2,1.000000,0.000000,-,5.1f,Glühanforderung
+0x007E,PFlt_qFl_mp,2,0.010000,0.000000,l,8.4f,verbrauchter Treibstoff seit der letzten erfolgreichen Regeneration
+0x0080,PSPCD_dvolOut,2,1.000000,0.000000,l/h,8.4f,Pre Supply Pump output value
+0x0081,PSPCD_rActrOut_mp,2,1.000000,0.000000,-,8.2f,Vorförderpumpe Ansteuertastverhältnis
+0x0082,AltCD_rAltLoad,2,0.003052,0.000000,%,8.4f,linearisiertes und fehlerentprelltes Generatorlastsignals
+0x0088,AirCtl_mDesVal,2,0.048829,-1599.971484,mg/Hub,8.3f,Luftmassensollwert
+0x008A,PCR_pDesVal,2,0.125002,0.000000,hPa,8.2f,Ladedrucksollwert
+0x008F,CTSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Wassertemperatur Spannungsrohwert
+0x0090,CTSCD_tClnt,2,0.016787,-50.138440,deg C,8.3f,Kühlmitteltemperatur
+0x0091,Eng_nAvrg,2,0.125002,0.000000,rpm,8.2f,mittlere Motordrehzahl
+0x0093,BattCD_u,2,0.002456,0.000000,V,8.1f,Batteriespannung
+0x0094,VSSCD_v,2,0.003815,0.000000,km/h,8.4f,Fahrzeuggeschwindigkeit
+0x0096,FMTC_trqInr,2,0.114445,-2500.060084,Nm,8.3f,aktuelles rückgerechnetes inneres Motormoment
+0x0097,LIGov_trq,2,0.114445,-2500.060084,Nm,8.3f,Leerlaufreglermoment
+0x0098,LIGov_nSetpoint,2,0.125002,0.000000,rpm,8.2f,Untergrenze Drehzahlintervall des LIGov
+0x009A,IATSCD_tAirCats,2,0.016787,-50.138440,deg C,8.3f,Ladelufttemperatur nach Ladeluftkühler
+0x009B,IATSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Lufttemperatur Spannungsrohwert
+0x009C,IATSCD_tAir,2,0.016787,-50.138440,deg C,8.3f,Ansauglufttemperatur
+0x009D,BPSCD_uRawVal,2,0.610958,0.000000,mV,8.1f,Spannungsrohwert des Ladedrucksensors
+0x009E,BPSCD_pOutVal,2,0.125002,0.000000,hPa,8.2f,Ladedruckwert
+0x009F,VehDa_tiEngOn,2,99.900100,0.000000,s,13.2f,Erfassung der aktuellen Betriebszeit
+0x00A0,OxiCCD_tPre,2,0.016787,-50.138440,deg C,8.3f,Abgastemperatur vor Oxidationskatalysator
+0x00A1,OxiCCD_uRawTempPre,2,0.610958,0.000000,mV,8.3f,Abgastemperatur vor Oxidationskatalysator Rohwert
+0x00A2,PFltCD_pPre,2,1.000000,0.000000,hPa,9.2f,Abgasdruck vor Partikelfilter
+0x00A3,PFltCD_tPre,2,0.016787,-50.138440,deg C,8.3f,Abgastemp. vor Partikelfilter erster Sensor
+0x00AE,EBAFCD_stSigOut,2,1.000000,0.000000,-,5.1f,source of activation for electrical power stage of EBAFCD output
+0x00AF,OPSCD_stSigOut,2,1.000000,0.000000,-,5.1f,Ausgangssignal Öldruckschalter
+0x00B0,EngM_stSync,2,1.000000,0.000000,-,5.1f,Meta-Status der KW- und NW-Ereignisverwaltung (Motorpositions-Management)
+0x00C2,RailCD_pPeak,2,0.030518,0.000000,bar,5.3f,maximaler Raildruck der letzten 10ms
+0x00C3,Rail_pSetPoint,2,0.030518,0.000000,bar,5.3f,Raildruck-sollwert
+0x00CA,OPSCD_stpOEL,2,1.000000,0.000000,-,5.1f,oil preasure sensor signal
+0x00D2,PFlt_stEngPOp,2,1.000000,0.000000,-,5.1f,Motorbetriebspunkt
+0x00D3,RailCD_uPeakRaw,2,0.610958,0.000000,mV,8.1f,Rohwert des Raildrucks
+0x00D4,FTSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Spannungsrohwert der Kraftstoffstemperatur
+0x00D6,PFltCD_uRawTempPre,2,0.610958,0.000000,mV,8.1f,Spannungsrohwert der Abgastemperatur vor dem Partikelfilter
+0x00DD,PFlt_stIntr_mp,2,1.000000,0.000000,-,5.1f,Statuswort Regeneration unterbrochen
+0x00DE,PFlt_stLck_mp,2,1.000000,0.000000,-,5.1f,Regeneration Blockierung und Freigabe
+0x00E6,FanCD_dcycRaw_mp,2,0.010000,0.000000,%,8.4f,dutycycle Ubatt-corrected
+0x00E7,ACCD_rDigOut_mp,2,1.000000,0.000000,-,8.2f,Digitalausgang Ansteuerung Klimakompressor
+0x00E9,AOHtCD_rOut_mp,2,0.010000,0.000000,%,8.4f,Meßpunkt fuer korrigiertes Tastverhaeltnis der Zuheizeransteuerung
+0x00EA,TVACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zur Endstufenansteuerung
+0x00EB,VSACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zur Endstufenansteuerung
+0x00EC,MeUnCD_dcycOut_mp,2,0.010000,0.000000,%,8.4f,Ausgangstastverhältnis
+0x00ED,PCVCD_dcycOut_mp,2,0.010000,0.000000,%,8.4f,Ausgangstastverhältnis
+0x00F7,PFlt_dvol,2,0.100000,0.000000,m^3/h,8.3f,berechneter Abgasvolumenstrom im Partikelfilter
+0x00F8,PFlt_pEngPrtMax_mp,2,0.125002,0.000000,hPa,8.2f,Maximaldruck Motorschutz
+0x00F9,PFlt_st1_mp,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters  LowWord LowByte (->Signals)
+0x00FA,PFlt_st1_mp1,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters  LowWord HighByte (->Signals)
+0x00FB,PFlt_st2_mp,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters HighWord LowByte (->Signals)
+0x00FC,PFlt_st2_mp1,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters  HighWord HighByte (->Signals)
+0x00FD,HWEMon_recLocLow_mp,2,1.000000,0.000000,-,8.2f,LowWord LowByte recovery location
+0x00FE,HWEMon_recLocLow_mp1,2,1.000000,0.000000,-,8.2f,LowWord HighByte recovery location
+0x00FF,HWEMon_recLocHigh_mp,2,1.000000,0.000000,-,8.2f,HighWord LowByte recovery location
+0x13B1,DSM_stSysLamp,2,1.000000,0.000000,-,5.1f,DSM System Lampen Anforderungsstatus (1 = kontinuierlich)
+0x13B2,DSM_stMIL,2,1.000000,0.000000,-,5.1f,"DSM Mil Anforderungsstatus (1 = kontinuierlich, 2 blinkend)"
+0x13B8,VehDa_lSum,2,8196.721311,0.000000,m,13.2f,Erfassung gefahrene Strecke
+0x13BB,VSSCD_a,2,0.000305,-9.999899,m/s^2,8.5f,Fahrbeschleunigung
+0x13BC,InjCtl_qSet,2,0.003052,-99.998993,mg/cyc,8.4f,Einspritzmenge Sollwert
+0x13BD,Rail_dvolMeUnSet,2,10.000000,0.000000,mm3/s,8.1f,Sollwert (Volumenstrom) von der Raildruckregelung
+0x13C3,T15CD_stWakeUpRawVal_mp,2,1.000000,0.000000,-,5.1f,Rohwert des Wake Up Signals aus der HWE
+0x13C4,AccPed_trqDes,2,0.114445,-2500.058653,Nm,8.3f,Fahrerwunsch Rohwert
+0x13C5,PFlt_dmSotSimEmi_mp,2,0.010000,0.000000,mg/s,8.4f,generierte Partikelmasse
+0x13C6,PFlt_dmSotSimRgnCRT_mp,2,0.010000,0.000000,mg/s,8.4f,abgebauter Partikelmassenstrom in Simulation durch CRT
+0x13C7,PFlt_dmSotSimRgnThr_mp,2,0.010000,0.000000,mg/s,8.4f,abgebauter Partikelmassenstrom in Simulation durch thermische Regeneration
+0x13C8,PFlt_dmSotSimRgn_mp,2,0.010000,0.000000,mg/s,8.4f,regenerierte Partikelmasse
+0x13C9,AirCtl_stAirCtlBits1_mp,2,1.000000,0.000000,-,8.2f,AirCtl_stAirCtlBits_mp LowWord LowByte (->Signals)
+0x13CA,AirCtl_stAirCtlBits1_mp1,2,1.000000,0.000000,-,8.2f,AirCtl_stAirCtlBits_mp LowWord HighByte (->Signals)
+0x13CB,AirCtl_stAirCtlBits2_mp,2,1.000000,0.000000,-,8.2f,AirCtl_stAirCtlBits_mp HighWord LowByte (->Signals)
+0x13CC,AirCtl_stAirCtlBits2_mp1,2,1.000000,0.000000,-,8.2f,AirCtl_stAirCtlBits_mp HighWord HighByte (->Signals)
+0x13CD,MeUn_iSet_mp,2,0.228891,0.000000,mA,8.2f,Sollstrom für die Zumesseinheit
+0x13CE,PFlt_pMid,2,0.125002,0.000000,hPa,8.2f,Absolutdruck im Partikelfilter
+0x13D4,EGT_tiRgnOilDil,2,0.999001,0.000000,s,13.4f,Critical time for oil dilution
+0x13D5,PCR_stMonitor,2,1.000000,0.000000,-,5.1f,Statusangabe bei Abschaltung der Regelung
+0x13D7,PFlt_facMltCor_mp,2,0.000122,0.000000,-,8.6f,Korrekturfaktor Additivasche
+0x13D9,AFSCD_tiRaw,2,0.100000,0.000000,us,8.3f,Periodendauerrohwert des Luftmassensensors
+0x13DA,AFSCD_dmAirNorm,2,0.048829,-1599.971484,Kg/h,8.3f,Normalisierte Luftmasse
+0x13DE,AirCtl_mGvnrDvt,2,0.048829,-1599.971484,mg/Hub,8.3f,Regelabweichung
+0x13DF,CoEng_trqInrSet,2,0.114445,-2500.060084,Nm,8.3f,inneres Moment Sollwert (>Mengenberechnung)
+0x13E0,IndSys_rVSA,2,0.010000,0.000000,%,8.4f,Sollposition für Einlaßkanalabschaltung
+0x13E2,GlwCD_RawVal_mp,2,1.000000,0.000000,-,5.1f,Rohwert für das Glühanforderungsregister des Glühcontrollers
+0x13E4,BrkCD_stMnSwtRawVal,2,1.000000,0.000000,-,5.1f,Rohwert Bremskontakt nicht entprellt
+0x13E5,BrkCD_stRedSwtRawVal,2,1.000000,0.000000,-,5.1f,Rohwert redundanter Bremskontakt nicht entprellt
+0x13E6,ConvCD_stRawVal,2,1.000000,0.000000,-,5.1f,Kupplungssignal Rohwert
+0x13F1,PFlt_mSotMeas_mp,2,0.010000,0.000000,g,8.4f,Partikelmasse additivkorrigiert
+0x13F2,PFlt_mSotMeasRaw_mp,2,0.010000,0.000000,g,8.4f,Strömungswdst. in Partikelmasse umgerechnet
+0x13F3,PFlt_mSotSim_mp,2,0.010000,0.000000,g,8.4f,simulierte Partikelmasse
+0x13F9,PFlt_tPreFlt_mp,2,0.016787,-50.138440,deg C,8.3f,PFlt_tPre PT1 gefiltert
+0x13FA,PFlt_vVehFlt_mp,2,0.003815,0.000000,km/h,8.4f,VSSCD_v PT1 gefiltert
+0x13FC,Clg_tiDynTst,2,0.010000,0.000000,s,13.4f,"Abgelaufene Zeit, seit der der dynamische plausibilitätstest aktiv ist"
+0x13FD,Clg_dtDynTst,2,0.100000,0.000000,deg C,8.3f,Ansteig der Wassertemperatur seit start
+0x13FE,PFlt_tSurf,2,0.016787,-50.138440,deg C,8.3f,Oberflächen Temperatur vom Partikel Filter
+0x13FF,Clg_tEndDynTst,2,1.000240,-41.084307,deg C,8.3f,CTSCD_tClnt am Ende des Tests
+0x1401,Rail_stCtlLoop,2,1.000000,0.000000,-,5.1f,Zustand der Steuerung Raildruckregler
+0x1405,IATSCD_tAirLinCats,2,0.016787,-50.138440,deg C,8.3f,Ladelufttemperatur - Linearisierter Wert aus HWK vor Aufruf der Übergangsfunktion
+0x1407,MeUnCD_iActFlt_mp,2,0.228891,0.000000,mA,8.2f,Zumesseinheit-Stromregelung gefilterter Strom-Istwert
+0x1408,DSM_ctOBDPath,2,1.000000,0.000000,-,5.1f,Anzahl der momentanen OBD-fehler im Fehlerspeicher
+0x140B,CrCtl_vDes,2,0.003815,0.000000,km/h,8.4f,Sollgeschwindigkeit FGR
+0x140C,VehDa_rVn,2,0.000002,0.000000,(km/h)/rpm,9.7f,Verhältnis von Fahrgeschwindigkeit zur Motordrehzahl
+0x140D,DSM_stCycles,2,1.000000,0.000000,-,5.1f,"Status der DSM Trigger Zyklen (WUC, DC, ...)"
+0x140E,DSM_tiDCDelay_mp,2,8196.721311,0.000000,-,8.2f,aktuelle Zeit für Driving cycle Verzögerungszeit
+0x140F,DSM_ctTstPath,2,1.000000,0.000000,-,8.2f,Anzahl der getesteten Fehlerpfade
+0x1411,DSM_ctRdyActCyc_mp,2,1.000000,0.000000,-,5.1f,Status für jedes Readinessbit aus dem aktuellen driving cycle
+0x1413,DSM_ctRdyTstCompr_mp,2,1.000000,0.000000,-,5.1f,Anzahl von in diesem Zyklus getesteten Fehlerpfaden die zum Readiness Bit Comprehensive Components  gehören.
+0x1414,PFlt_resFlow,2,0.001000,0.000000,hPa/(m^3/h),8.5f,Strömungswiderstand
+0x1415,CrCtl_numGear,2,1.000000,0.000000,-,5.1f,Gang FGR
+0x1416,CoEng_stShutOff,2,1.000000,0.000000,-,5.1f,Typ der wirksamen Abschaltursache (0: Nachlauf; 1: reversibel; 2: irreversibel)
+0x1417,CoEng_trqInrLtd,2,0.114445,-2500.060084,Nm,8.3f,"inneres Moment Sollwert nach Begrenzung, vor Eingriff ARD-Störungsregler"
+0x1418,StSys_trqStrt,2,0.114445,-2500.060084,Nm,8.3f,inneres Moment Startwert
+0x1419,CrCtl_trqDes,2,0.114445,-2500.058653,Nm,8.3f,Momentenanforderung FGR
+0x141A,DSM_ctRdyTstEGR_mp,2,1.000000,0.000000,-,5.1f,Anzahl von in diesem Zyklus getesteten Fehlerpfaden die zum Readiness Bit EGR gehören.
+0x141B,DSM_ctRdyTstFuel_mp,2,1.000000,0.000000,-,5.1f,Anzahl von in diesem Zyklus getesteten Fehlerpfaden die zum Readiness Bit Fuel System gehören.
+0x141C,CoEng_trqLimMin_mp,2,0.114445,-2500.060084,Nm,8.3f,"Begrenzungsmoment, falls kein momentenbegrenzender Systemfehler vorliegt (Minimum aus Rauchgrenze un Motormech.schutz)"
+0x141D,CoVM_trqPrpDes,2,0.114445,-2500.058653,Nm,8.3f,Wunsch Vortriebsmoment
+0x1420,DSM_ctRdyTstMisf_mp,2,1.000000,0.000000,-,5.1f,Anzahl von in diesem Zyklus getesteten Fehlerpfaden die zum Readiness Bit Misfire  gehören.
+0x1421,AOHt_stShutOff_mp,2,1.000000,0.000000,-,8.2f,Überblick auf alle Abschaltbedingungen
+0x1422,FrmMng_lSum,2,10.000000,0.000000,km,8.1f,Kilometerstand des Fahrzeugs
+0x1424,DSM_stRdyAB,2,1.000000,0.000000,-,8.2f,Readiness Status für Diagnoseschnittstelle gemäß SAE J1979 PID1 Byte A + B
+0x1426,PCVCD_iActVal,2,0.228891,0.000000,mA,8.2f,Analogeingang Strom-Istwert
+0x1428,Gearbx_swtType,2,1.000000,0.000000,-,5.3f,Getriebetyp (0: manuell(MT); 1: automatisch(AT); 2: Schaltautomatisch(AST); 3: StufenlosesGetriebe (CVT); 4:automatic Z-Car)
+0x1429,InjVlv_nCyl1,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 1
+0x142A,InjVlv_nCyl2,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 2
+0x142B,InjVlv_nCyl3,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 3
+0x142C,InjVlv_nCyl4,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 4
+0x142D,InjVlv_nCyl5,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 5
+0x142E,InjVlv_nCyl6,2,0.125002,0.000000,rpm,8.2f,Zylinderspezifische Drehzahl für Zylinder 6
+0x142F,InjVlv_qFBCCyl1,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 1
+0x1430,InjVlv_qFBCCyl2,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 2
+0x1431,InjVlv_qFBCCyl3,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 3
+0x1432,InjVlv_qFBCCyl4,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 4
+0x1433,InjVlv_qFBCCyl5,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 5
+0x1434,InjVlv_qFBCCyl6,2,0.003052,-99.998993,mg/hub,8.4f,Zylinderselektive FBC-Mengenkorrektur für Zylinder 6
+0x1435,PFlt_resFlowOfs,2,0.001000,0.000000,hPa/(m^3/h),8.5f,Strömungswiderstandoffset
+0x1436,PFlt_resFlowFlt,2,0.001000,0.000000,hPa/(m^3/h),8.5f,gefilterter Strömungswiderstand
+0x1439,InjCrv_phiPiI1Des,2,0.002930,-90.351389,deg CrS,8.4f,gewünschter Winkelkomponente Ansteuerbeginn PiI1
+0x143A,InjCrv_phiPiI2Des,2,0.002930,-90.351389,deg CrS,8.4f,gewünschte Winkelkomponente Ansteuerbeginn PiI2
+0x143B,InjCrv_phiPiI3Des,2,0.002930,-90.351389,deg CrS,8.4f,gewünschte Winkelkomponente Ansteuerbeginn PiI3
+0x143C,InjVCD_tiPiI1ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 1
+0x143D,InjVCD_tiPiI2ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x143E,InjVCD_tiPiI3ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 3
+0x143F,InjCrv_qPiI1Des,2,0.001526,0.000000,mg/inj,8.4f,gewünschte Einspritzmenge PiI 1
+0x1440,InjCrv_qPiI2Des,2,0.001526,0.000000,mg/inj,8.4f,gewünschte Einspritzmenge PiI 2
+0x1441,InjCrv_qPiI3Des,2,0.001526,0.000000,mg/inj,8.4f,gewünschte Einspritzmenge PiI 3
+0x1442,InjCrv_stPiI1_mp,2,1.000000,0.000000,-,5.1f,Freigabestatus PiI1
+0x1443,InjCrv_stPiI2_mp,2,1.000000,0.000000,-,5.1f,Freigabestatus PiI2
+0x1444,InjVCD_tiMI1ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Haupteinspritzung 1
+0x1445,InjCrv_qPiI1Bas_mp,2,0.001526,0.000000,mg/inj,8.4f,Einspritzmenge PiI1 Grundwert
+0x1446,InjCrv_qPiI2Bas_mp,2,0.001526,0.000000,mg/inj,8.4f,Einspritzmenge PiI2 Grundwert
+0x1447,InjCrv_phiMI1Des,2,0.002930,-90.351389,deg CrS,8.4f,gewünschter Bezugswinkel für Beginn der MI1
+0x1448,InjCrv_tiMI1ET,2,0.152594,-5000.041963,us,8.2f,geschätzte Ansteuerdauer MI1
+0x1449,InjCrv_qMI1Des,2,0.001526,0.000000,mg/inj,8.4f,Sollmenge Haupteinspritzung
+0x144C,InjCrv_phiPoI1Des,2,0.002930,-90.351389,deg CrS,8.4f,gewünschter Bezugswinkel für Beginn der PoI1
+0x144D,InjCrv_tiPoI2Des,2,0.152594,-5000.041963,us,8.2f,gewünschte Bezugszeitkomponente für Beginn PoI2
+0x144E,InjVCD_tiPoI1ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer Nacheinspritzung 1
+0x144F,InjVCD_tiPoI2ET_mp,2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Nacheinspritzung 2
+0x1450,APPCD_stKickDown,2,1.000000,0.000000,-,5.1f,Schalter KIck Down
+0x1451,FrmMng_swtAC_mp,2,1.000000,0.000000,-,5.1f,Schalter Klimakompressor
+0x1452,FrmMng_swtACComp_mp,2,1.000000,0.000000,-,5.1f,Klimabereitschaft
+0x1453,CoEng_voltotFlConsum,2,1.000000,0.000000,ul,13.2f,Absoluter Kraftstoffverbrauch
+0x1454,PFlt_resFlowRaw_mp,2,0.001000,0.000000,hPa/(m^3/h),8.5f,Strömungswiderstand Rohwert
+0x1455,DSM_stRdyCD,2,1.000000,0.000000,-,8.2f,Readiness Status für Diagnoseschnittstelle gemäß SAE J1979 PID1 Byte C * D
+0x1456,EngM_trqFrc,2,0.114445,-2500.060084,Nm,8.3f,aktuelles Reibmoment
+0x1457,FrmMng_nFan,2,0.011445,0.000000,1/min,8.3f,Lüfterdrehzahl
+0x1458,CrCCD_stKey,2,1.000000,0.000000,-,5.1f,Rückgabewert
+0x1459,CrCtl_stLampOut,2,1.000000,0.000000,-,5.1f,Status der CrCtl-Lampe (wird über CAN versendet)
+0x145F,DSMDur_ctDfctDur1,2,1.000000,0.000000,-,8.2f,Wert Fehlerdauerzähler
+0x1460,DSMDur_ctDfctDur2,2,1.000000,0.000000,-,8.2f,Wert Fehlerdauerzähler 2
+0x1461,DSMDur_stGlobalDefCnt_mp,2,1.000000,0.000000,-,5.1f,Aktivierungs und Resetzustand der beiden globalen Fehlerdauerzähler
+0x1462,Gearbx_stGear,2,1.000000,0.000000,-,5.1f,Ganginformation
+0x1463,EngM_stOut,2,1.000000,0.000000,-,5.1f,"state of engine bearing depending on engine speed, engine temperature and gear state"
+0x1464,ASDdc_trq,2,0.114445,-2500.060084,Nm,8.3f,Momentforderung Aktiver Ruckeldämpfer (Störungsregler)
+0x146A,LIGov_st,2,1.000000,0.000000,-,8.2f,Zustand des Leerlaufreglers
+0x146B,FrmMng_tEnv,2,0.016787,-50.138440,deg C,8.3f,Umgebungstemperatur
+0x146C,FrmMng_stACHtgReq,2,1.000000,0.000000,-,5.1f,Heizleistungsanforderung über CAN
+0x146D,ACCD_stACPresent,2,1.000000,0.000000,-,5.1f,Klimaanlage im Auto vorhanden
+0x1478,CrCtl_stShutOffCode1_mp,2,1.000000,0.000000,-,8.2f,LowWord LowByte von CrCtl_shutOffCode (Verwendung als Signal)
+0x1479,CrCtl_stShutOffCode1_mp1,2,1.000000,0.000000,-,8.2f,LowWord HighByte von CrCtl_shutOffCode (Verwendung als Signal)
+0x147A,CrCtl_stShutOffCode2_mp,2,1.000000,0.000000,-,8.2f,HighWord LowByte von CrCtl_shutOffCode (Verwendung als Signal)
+0x147B,CrCtl_stShutOffCode2_mp1,2,1.000000,0.000000,-,8.2f,HighWord HighByte von CrCtl_shutOffCode (Verwendung als Signal)
+0x147C,CrCtl_stShutOffFrz1_mp,2,1.000000,0.000000,-,8.2f,latched shutoff reason
+0x147D,CrCtl_stShutOffFrz1_mp1,2,1.000000,0.000000,-,8.2f,latched shutoff reason
+0x147E,CrCtl_stShutOffFrz2_mp,2,1.000000,0.000000,-,8.2f,latched shutoff reason
+0x147F,CrCtl_stShutOffFrz2_mp1,2,1.000000,0.000000,-,8.2f,latched shutoff reason
+0x1480,BrkCD_tiDebTmrPlaus_mp,2,10.000000,0.000000,ms,8.1f,Entprelltimer für Bremssignal-Plausibilitaets-Check
+0x148C,ETClb_stCor,2,1.000000,0.000000,-,5.1f,Statusanzeige der Freigaben für die Ansteuerdauerkorrektur der Nullmengenkalibrierung
+0x148D,ETClb_stRlsCylCor_mp,2,1.000000,0.000000,-,5.1f,Zylinderspezifische Freigabe der Ansteuerdauerkorrektur der Ansteuerdauerkalibrierung
+0x148E,ETClb_ctLrn_mp[0],2,1.000000,0.000000,-,8.2f,learn cycle counter et calibration
+0x148F,ETClb_dtiETFlt0_mp[0],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1490,ETClb_dtiETFlt0_mp[1],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1491,ETClb_dtiETFlt0_mp[2],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1492,ETClb_dtiETFlt0_mp[3],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1493,ETClb_dtiETFlt0_mp[4],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1494,ETClb_dtiETFlt0_mp[5],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1495,ETClb_ctLrn_mp[1],2,1.000000,0.000000,-,8.2f,learn cycle counter et calibration
+0x1496,ETClb_dtiETFlt1_mp[0],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1497,ETClb_dtiETFlt1_mp[1],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1498,ETClb_dtiETFlt1_mp[2],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x1499,ETClb_dtiETFlt1_mp[3],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x149A,ETClb_dtiETFlt1_mp[4],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x149B,ETClb_dtiETFlt1_mp[5],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x149C,ETClb_ctLrn_mp[2],2,1.000000,0.000000,-,8.2f,learn cycle counter et calibration
+0x149D,ETClb_dtiETFlt2_mp[0],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x149E,ETClb_dtiETFlt2_mp[1],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x149F,ETClb_dtiETFlt2_mp[2],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x14A0,ETClb_dtiETFlt2_mp[3],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x14A1,ETClb_dtiETFlt2_mp[4],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x14A2,ETClb_dtiETFlt2_mp[5],2,0.152594,-5000.041963,us,8.2f,Ansteuerdauer der Voreinspritzung 2
+0x14B4,AccPed_rChkdVal,2,0.003052,0.000000,%,8.4f,Plausibility check results
+0x14B5,CoEng_pDiffPFltPrdc_mp,2,0.125002,0.000000,hPa,8.2f,Predicted differential pressure of the particle filter
+0x14B6,CoEng_trq,2,0.114445,-2500.060084,Nm,8.3f,current engine torque output
+0x14B7,CoEng_trqLimPDiff,2,0.114445,-2500.060084,Nm,8.3f,Limiting torque due to exhaust gas back pressure
+0x14B8,Dfp_LSUMon1Sens_mp,2,1.000000,0.000000,-,8.2f,fault types used from all lambda functions for the purpose of disabling
+0x14B9,DfpErrCol_mp,2,1.000000,0.000000,-,8.2f,measurement point Array for Dfp Sammelolda Path Error Status
+0x14BA,EGSys_tEGPstTrbn,2,0.016787,-50.138440,deg C,8.3f,Exhaust gas temperature after the turbine
+0x14BB,EGSys_tEGPstTube,2,0.016787,-50.138440,deg C,8.3f,Exhaust gas temperature at tube outlet
+0x14BC,EGSys_tTube,2,0.016787,-50.138440,deg C,8.3f,Tube wall temperature
+0x14BD,FlMng_qLimSmk,2,0.010000,-327.670000,mg/hub,8.4f,maximum allowed injection mass to prevent smoke
+0x14BE,InjCrv_qPoI1Des,2,0.001526,0.000000,mg/inj,8.4f,desired quantity of PoI1
+0x14BF,InjCrv_qPoI2Des,2,0.001526,0.000000,mg/inj,8.4f,desired quantity for PoI2
+0x14C0,InjCrv_qPoI2Eff,2,0.001526,0.000000,mg/inj,8.4f,torque-forming quantity of PoI2
+0x14C1,InjCrv_tiPiI1Des,2,0.152594,-5000.041963,us,8.2f,desired time-component of SOE PiI1
+0x14C2,LSU_rLmbd,2,0.001000,0.000000,-,8.5f,lambda value
+0x14C3,LSU_rO2Calc_mp,2,0.000010,0.000000,-,9.7f,actual O2 concentration calculated from air mass & inj. fuel qty
+0x14C4,LSU_stO2Err_mp,2,1.000000,0.000000,-,8.2f,status word: state plausibility check
+0x14C5,LSUCD_rO2Act,2,0.000010,0.000000,-,9.7f,"Raw Oxygen value whithout filter and without freeze, only offset compensated"
+0x14C6,LSUCD_rO2Adpt,2,0.000010,0.000000,-,9.7f,Adapted oxygen concentration
+0x14C7,LSUCD_rO2PresComp,2,0.000010,0.000000,-,9.7f,Pressure compensated O2 value
+0x14C8,LSUCD_rO2Raw,2,0.000010,0.000000,-,9.7f,"Raw Oxygen value, only offset compensated"
+0x14C9,LSUCD_uO2Raw,2,0.610958,0.000000,mV,8.1f,Raw Voltage of oxygen signal
+0x14CA,PFlt_pDiffRaw,2,0.125002,0.000000,hPa,8.2f,differential pressure of particle filter
+0x14CB,PFlt_tOxiPre,2,0.016787,-50.138440,deg C,8.3f,pressure pre particle filter
+0x14CC,PFlt_tOxiPreSty,2,0.016787,-50.138440,deg C,8.3f,stationary temp ahead of particle filter
+0x14CD,PFlt_tPre,2,0.016787,-50.138440,deg C,8.3f,temperature pre particle filter
+0x14CE,PFlt_tPreSty,2,0.016787,-50.138440,deg C,8.3f,stationary temp ahead of oxidation catalyst
+0x14CF,PFlt_tPstSim,2,0.016787,-50.138440,deg C,8.3f,simulated temperature downstream from particle filter
+0x14D0,PCR_pBGDev,2,0.125002,0.000000,hPa,8.2f,govenor deviation of PCR
+0x14D1,PCR_stWorkSph,2,1.000000,0.000000,-,5.1f,info about PCR working sphere
+0x14D2,AirCtl_stMonitor,2,1.000000,0.000000,-,5.1f,Status of monitoring
+0x14D3,FMA_qMapRow0_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D4,FMA_qMapRow0_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D5,FMA_qMapRow0_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D6,FMA_qMapRow0_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D7,FMA_qMapRow0_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D8,FMA_qMapRow0_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14D9,FMA_qMapRow0_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14DA,FMA_qMapRow0_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 0
+0x14DB,FMA_qMapRow1_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14DC,FMA_qMapRow1_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14DD,FMA_qMapRow1_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14DE,FMA_qMapRow1_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14DF,FMA_qMapRow1_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14E0,FMA_qMapRow1_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14E1,FMA_qMapRow1_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14E2,FMA_qMapRow1_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 1
+0x14E3,FMA_qMapRow2_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E4,FMA_qMapRow2_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E5,FMA_qMapRow2_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E6,FMA_qMapRow2_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E7,FMA_qMapRow2_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E8,FMA_qMapRow2_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14E9,FMA_qMapRow2_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14EA,FMA_qMapRow2_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 2
+0x14EB,FMA_qMapRow3_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14EC,FMA_qMapRow3_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14ED,FMA_qMapRow3_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14EE,FMA_qMapRow3_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14EF,FMA_qMapRow3_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14F0,FMA_qMapRow3_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14F1,FMA_qMapRow3_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14F2,FMA_qMapRow3_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 3
+0x14F3,FMA_qMapRow4_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F4,FMA_qMapRow4_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F5,FMA_qMapRow4_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F6,FMA_qMapRow4_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F7,FMA_qMapRow4_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F8,FMA_qMapRow4_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14F9,FMA_qMapRow4_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14FA,FMA_qMapRow4_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 4
+0x14FB,FMA_qMapRow5_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x14FC,FMA_qMapRow5_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x14FD,FMA_qMapRow5_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x14FE,FMA_qMapRow5_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x14FF,FMA_qMapRow5_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x1500,FMA_qMapRow5_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x1501,FMA_qMapRow5_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x1502,FMA_qMapRow5_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 5
+0x1503,FMA_qMapRow6_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1504,FMA_qMapRow6_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1505,FMA_qMapRow6_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1506,FMA_qMapRow6_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1507,FMA_qMapRow6_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1508,FMA_qMapRow6_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x1509,FMA_qMapRow6_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x150A,FMA_qMapRow6_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 6
+0x150B,FMA_qMapRow7_mp[0],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x150C,FMA_qMapRow7_mp[1],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x150D,FMA_qMapRow7_mp[2],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x150E,FMA_qMapRow7_mp[3],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x150F,FMA_qMapRow7_mp[4],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x1510,FMA_qMapRow7_mp[5],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x1511,FMA_qMapRow7_mp[6],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x1512,FMA_qMapRow7_mp[7],2,0.010000,-327.670000,mg/hub,8.4f,FMA Adaptive map - elements of Row 7
+0x1513,FMA_tiFuncOp_mp,2,0.999001,0.000000,s,13.4f,operating time of FMA error model since last initialisation
+0x1514,ACCtl_stLogicOut,2,1.000000,0.000000,-,5.1f,Status of AC Compressor
+0x1515,ACCtl_stShutOff_mp,2,1.000000,0.000000,-,8.2f,AC shut off status
+0x1518,ETClb_st_mp,2,1.000000,0.000000,-,13.11f,state of ET calibration
+0x1519,ETClb_swtQckClb_mp,2,1.000000,0.000000,-,5.1f,switch for quick calibration
+0x151A,ETClb_tiETMinEff_mp[0],2,0.152594,-5000.041963,us,8.2f,ET after quantity adjustment
+0x151B,ETClb_tiETMinEff_mp[1],2,0.152594,-5000.041963,us,8.2f,ET after quantity adjustment
+0x151C,ETClb_tiETMinEff_mp[2],2,0.152594,-5000.041963,us,8.2f,ET after quantity adjustment
+0x151D,InjVCD_tiPiI1ZFCETCor_mp[0],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 1"
+0x151E,InjVCD_tiPiI1ZFCETCor_mp[1],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 2"
+0x151F,InjVCD_tiPiI1ZFCETCor_mp[2],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 3"
+0x1520,InjVCD_tiPiI1ZFCETCor_mp[3],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 4"
+0x1521,InjVCD_tiPiI1ZFCETCor_mp[4],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 5"
+0x1522,InjVCD_tiPiI1ZFCETCor_mp[5],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI1, cylinder 6"
+0x1523,InjVCD_tiPiI2ZFCETCor_mp[0],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 1"
+0x1524,InjVCD_tiPiI2ZFCETCor_mp[1],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 2"
+0x1525,InjVCD_tiPiI2ZFCETCor_mp[2],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 3"
+0x1526,InjVCD_tiPiI2ZFCETCor_mp[3],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 4"
+0x1527,InjVCD_tiPiI2ZFCETCor_mp[4],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 5"
+0x1528,InjVCD_tiPiI2ZFCETCor_mp[5],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI2, cylinder 6"
+0x1529,InjVCD_tiPiI3ZFCETCor_mp[0],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 1"
+0x152A,InjVCD_tiPiI3ZFCETCor_mp[1],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 2"
+0x152B,InjVCD_tiPiI3ZFCETCor_mp[2],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 3"
+0x152C,InjVCD_tiPiI3ZFCETCor_mp[3],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 4"
+0x152D,InjVCD_tiPiI3ZFCETCor_mp[4],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 5"
+0x152E,InjVCD_tiPiI3ZFCETCor_mp[5],2,0.152594,-5000.041963,us,8.2f,"ZFC energising time correction for PiI3, cylinder 6"
+0x152F,Rail_pSetPointZFC_mp,2,0.030518,0.000000,bar,5.3f,rail pressure setpoint value after ZFC intervention
+0x1530,ZFC_dpRail_mp,2,0.030518,0.000000,bar,5.3f,rail pressure devitation to rail pressure calibration point
+0x1531,ZFC_numCylInj_mp,2,1.000000,0.000000,-,5.1f,number of cylinder for ZFC Injection
+0x1532,ZFC_Sig_mp[0],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 1"
+0x1533,ZFC_Sig_mp[1],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 2"
+0x1534,ZFC_Sig_mp[2],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 3"
+0x1535,ZFC_Sig_mp[3],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 4"
+0x1536,ZFC_Sig_mp[4],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 5"
+0x1537,ZFC_Sig_mp[5],2,1.000000,0.000000,-,13.2f,"ZFC measurement value of calibration, cylinder 6"
+0x1538,ZFC_st_mp,2,1.000000,0.000000,-,13.10f,state of Zero Fuel quantity Calibration Coordinator
+0x1539,ZFC_stEvalSig_mp,2,1.000000,0.000000,-,13.11f,Status of ZFC engine speed evaluation
+0x153A,ZFC_stInj_mp,2,1.000000,0.000000,-,13.10f,state of Injection for Zero Fuel quantity Calibration
+0x153B,ZFC_tiET_mp,2,0.152594,-5000.041963,us,8.2f,energizing time for ZFC injection
+0x153C,LSUCD_drO2Adpt,2,0.000010,0.000000,-,9.7f,Lambda adaption result
+0x153D,LSUCD_facO2Corr_mp,2,0.000122,0.000000,-,8.6f,Lambda Correction factor of adaption
+0x153E,EGSys_stHtgLSU,2,1.000000,0.000000,-,5.1f,Status bit for Lambda probe 0 heating On/Off
+0x153F,EGSys_ctCldStrtLSU_mp,2,1.000000,0.000000,-,5.1f,Status bit for valid gas pulse detected
+0x1540,LSUCD_stO2Valid,2,1.000000,0.000000,-,5.1f,status of Oxigen signal valid/not valid

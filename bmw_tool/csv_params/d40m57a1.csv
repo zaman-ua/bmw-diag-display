@@ -1,0 +1,161 @@
+addr,name,size,factor_a,factor_b,unit,format,description
+0x0010,aroIST_4,2,0.035993,0.000000,kg/h,6.2f,MLt Luftmassenstrom n. Linearisierung u. Mittelung
+0x0E00,edmRSTCD,2,1.000000,0.000000,-,6.2f,Restart Code
+0x0E02,mrmN_LLBAS,2,1.000000,0.000000,1/min,6.2f,N Leerlaufsolldrehzahl
+0x0E80,ehmFARS,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung AGR-Steller
+0x0E81,ehmFLDS,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Ladedrucksteller
+0x0E87,ehmFGRS,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Gluehrelais
+0x0E91,ehmFKLI,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Klimakompressor
+0x0E9A,ehmFDRA,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Drallklappe
+0x0E9B,ehmFKWH,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Kuehlwasserheizung
+0x0E9F,ehmFMML,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Motorlager
+0x0EA2,ehmFMLS,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Elektroluefter
+0x0EA5,ehmFKDR,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Raildruckregelventil
+0x0EA6,ehmFEKP,2,0.010000,0.000000,%,6.2f,Tastverhaeltnis Ansteuerung Vorfoerderpumpe
+0x0ECC,khoGENLAST,2,0.010000,0.000000,%,6.2f,Generatorlast
+0x0EE0,aroREG_2,2,1.000000,0.000000,-,6.2f,AGR-Status  Regelung / Steuerung / Abschaltung
+0x0F00,MOTORTEMPERATUR,2,0.100000,-273.140000,Grad C,6.2f,WTF Wassertemperatur
+0x0F01,AN_LUFTTEMPERATUR,2,0.100000,-273.140000,Grad C,6.2f,LTF Lufttemperatur
+0x0F02,anmKTF,2,0.100000,-273.140000,Grad C,6.2f,KTF Kraftstofftemperatur
+0x0F08,fgmFGAKT,2,0.010000,0.000000,km/h,6.2f,aktuelle Geschwindigkeit
+0x0F09,mrmFG_SOLL,2,0.010000,0.000000,km/h,6.2f,V Sollwert Fahrgeschwindigkeit von FGR
+0x0F0A,fgmBESCH,2,0.084771,-10.850694,m/s^2,6.2f,Beschleunigung
+0x0F0B,fgm_VzuN,2,0.000039,0.000000,(km/h)/(1/min),6.2f,Verhaeltnis Geschwindigkeit/Drehzahl (V/N aktuell) 
+0x0F10,MOTORDREHZAHL,2,1.000000,0.000000,1/min,6.2f,N Drehzahl
+0x0F12,dzmNakt,2,1.000000,0.000000,1/min,6.2f,N aktuelle Drehzahl aus letzter Periode
+0x0F13,dzmzN1,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 1
+0x0F14,dzmzN2,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 2
+0x0F15,dzmzN3,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 3
+0x0F16,dzmzN4,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 4
+0x0F17,dzmzN5,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 5
+0x0F18,dzmzN6,2,1.000000,0.000000,1/min,6.2f,Selektive Drehzahl Zylinder 6
+0x0F19,dzmzMk1,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 1
+0x0F1A,dzmzMk2,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 2
+0x0F1B,dzmzMk3,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 3
+0x0F1C,dzmzMk4,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 4
+0x0F1D,dzmzMk5,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 5
+0x0F1E,dzmzMk6,2,0.010000,0.000000,mm^3,6.2f,Selektive Mengenkorrektur Zylinder 6
+0x0F30,armM_List,2,0.100000,0.000000,mg/Hub Luft,6.2f,M_L aktuelle Luftmasse
+0x0F31,aroSOLL_5,2,0.100000,0.000000,mg/Hub Luft,6.2f,M_L Luft-Sollwert nach Sollwertbegrenzung
+0x0F32,armM_Lsoll,2,0.100000,0.000000,mg/Hub Luft,6.2f,M_L Sollwert fuer AGR-Regelung
+0x0F34,anoU_LMM,2,0.004888,0.000000,V,6.2f,LMM Spannung Luftmassenmesser
+0x0F35,PWG_POTI_SPANNUNG,2,0.004888,0.000000,V,6.2f,PWG Spannung Pedalwertgeber Poti 1
+0x0F40,ldmP_Llin,2,1.000000,0.000000,mbar,6.2f,aktueller Ladedruck  / Luftdruck
+0x0F41,ldmADF,2,1.000000,0.000000,mbar,6.2f,aktueller Atmosphaerendruck
+0x0F42,ldmP_Lsoll,2,1.000000,0.000000,mbar,6.2f,Sollwert Ladedruck
+0x0F48,ldmT_LTGG,2,0.100000,-273.140000,Grad C,6.2f,Errechnete Lufttemperatur
+0x0F49,ldoTVsteu,2,0.010000,0.000000,%,6.2f,LDR Tastverhaeltnis Steuerung
+0x0F60,PWG_FAHRERWUNSCH,2,0.010000,0.000000,%,6.2f,PWG Pedalwertgeber Poti 1
+0x0F61,anmLMM,2,0.010000,0.000000,%,6.2f,LMM Luftmasse
+0x0F62,LADEDRUCK,2,1.000000,0.000000,mbar,6.2f,LDF Ladedruck
+0x0F63,anmADF,2,1.000000,0.000000,mbar,6.2f,ADF Atmosphaerendruck
+0x0F65,UBATT,2,0.023620,0.000000,V,6.2f,UBT Batteriespannung
+0x0F6C,dimDIG_0,2,1.000000,0.000000,-,6.2f,Auf logisch 0 erkannte Digitaleingaenge
+0x0F6D,dimDIG_1,2,1.000000,0.000000,-,6.2f,Auf logisch 1 erkannte Digitaleingaenge
+0x0F70,dimDIGprel,2,1.000000,0.000000,-,6.2f,Entprellte logische Zustaende der digitalen Eingaenge
+0x0F7E,mrmF_GANG,2,1.000000,0.000000,-,6.2f,FGR aktuelle Gangstufe
+0x0F7F,mrmSTATUS,2,1.000000,0.000000,-,6.2f,Status Motorbetriebsphase
+0x0F80,mrmM_EAKT,2,0.010000,0.000000,mm^3,6.2f,M_E Aktuelle Einspritzmenge (ohne ARD)
+0x0F82,mrmM_ESTAR,2,0.010000,0.000000,mm^3,6.2f,M_E resultierender Startmengen-Sollwert
+0x0F83,mrmPWGfi,2,0.010000,0.000000,%,6.2f,PWG gefilterte Pedalwertgeber-Position
+0x0F84,mrmM_EPWG,2,0.010000,0.000000,mm^3,6.2f,M_E Wunschmenge = f(PWG) aus Fahrverhaltenkennfeld
+0x0F85,mrmM_EFGR,2,0.010000,0.000000,mm^3,6.2f,M_E Wunschmenge aus Fahrgeschwindigkeitsregelung
+0x0F86,mrmM_EWUNF,2,0.010000,0.000000,mm^3,6.2f,M_E Fahrerwunschmenge aus PWG oder FGR
+0x0F89,mrmM_DXMSR,2,0.010000,0.000000,mm^3,6.2f,M_E externer Momenteneingriff MSR
+0x0F8A,mrmM_EBEGR,2,0.010000,0.000000,mm^3,6.2f,M_E resultierende Begrenzungsmenge
+0x0F8B,mrmM_EWUN,2,0.010000,0.000000,mm^3,6.2f,M_E Fahrerwunschmenge nach externem Mengeneingriff
+0x0F8C,mrmM_EMOT,2,0.010000,0.000000,mm^3,6.2f,M_E Einspritzmenge nach ARD
+0x0F8D,mrmM_ELLR,2,0.010000,0.000000,mm^3,6.2f,M_E Menge aus Leerlaufregelung
+0x0F8E,mrmM_EKORR,2,0.010000,0.000000,mm^3,6.2f,M_E Fahrmenge korrigiert mit Vollast- und Mengenabgleich
+0x0F9A,mroFABZUST,2,1.000000,0.000000,-,6.2f,Zustand Ablaufsteuerung
+0x0FAE,xcmZ_E,2,1.000000,0.000000,-,6.2f,EWS Uebertragungsfehlerzaehler
+0x0FB7,khoNOR_AB,2,1.000000,0.000000,-,6.2f,Zustand und Abschaltbedingungen der Kuehlmittelheizung
+0x0FD0,mrmKM_akt,2,10.000000,0.000000,km,6.2f,aktueller km-Stand von Kombiinstrument
+0x0FF6,anmUG1,2,0.017644,0.000000,V,6.2f,"UG1 Speisespannung 1 fuer Pedalwertgeber 2, Ladedruckfuehler, Luftmassenmesser"
+0x0FF7,anmUG2,2,0.017644,0.000000,V,6.2f,"UG2 Speisespannung 2 fuer Pedalwertgeber 1, Kraftstoff- ,Vorfoerderdruckfuehler"
+0x0FF8,anmUC1,2,0.020572,0.000000,V,6.2f,"UC1 Kondensatorspannung 1 fuer Zylinder 1,2,3"
+0x0FF9,anmUC2,2,0.020572,0.000000,V,6.2f,"UC2 Kondensatorspannung 2 fuer Zylinder 4,5,6"
+0x0FFA,anmPGS,2,0.010000,0.000000,%,6.2f,PGS Pedalwertgeber Poti 2
+0x0FFC,RAILDRUCK,2,10.235414,0.000000,bar,6.2f,KDF Raildruck
+0x0FFE,anmIDV,2,4.995005,0.000000,mA,6.2f,IDV Istwert Stromregelung Druckregelventil
+0x1000,fbmSDIAL,2,1.000000,0.000000,-,6.2f,"Anforderung Diagnoselampe aus Fehlerbehandlung (0:Aus,1:Ein,2:Blinken)"
+0x1300,fbmBSTZ_UB,2,0.100000,0.000000,h,6.2f,UB Betriebsstunden
+0x1C00,comGTR_opt,2,1.000000,0.000000,-,6.2f,Identifikation Handschalter/Automatik
+0x1F06,VORFOERDERDRUCK,2,0.001000,0.000000,bar,6.2f,VDF Vorfoerderdruck
+0x1F50,zhoSYNC_ST,2,1.000000,0.000000,-,6.2f,Synchronisationsstatus des Zumesshandlers
+0x1F51,zuoAB_VE1,2,0.023438,0.000000,Grad KW,6.2f,Ansteuerbeginn Voreinspritzung
+0x1F52,zuoAD_VE1,2,1.000000,0.000000,uS,6.2f,Ansteuerdauer Voreinspritzung
+0x1F53,zuoME_VE,2,0.010000,0.000000,mm^3,6.2f,M_E Menge Voreinspritzung
+0x1F55,zuoVE_STAT,2,1.000000,0.000000,-,6.2f,Voreinspritzung - Schalter
+0x1F57,zuoMEVGW,2,0.010000,0.000000,mm^3,6.2f,GW-Kennfeld Menge Voreinspritzung
+0x1F5A,zumAB_HE,2,0.023438,0.000000,Grad KW,6.2f,Ansteuerbeginn Haupteinspritzung
+0x1F5B,zuoAD_HE,2,1.000000,0.000000,uS,6.2f,Ansteuerdauer Haupteinspritzung
+0x1F5C,zuoMEHE,2,0.010000,0.000000,mm^3,6.2f,M_E Menge Haupteinspritzung
+0x1F5D,zumP_RAIL,2,10.235414,0.000000,bar,6.2f,Raildruck fuer Mengenzumessung
+0x1F5E,zumPQsoll,2,10.235414,0.000000,bar,6.2f,Raildruck Sollwert
+0x1F60,zumAB_NE,2,0.023438,0.000000,Grad KW,6.2f,Ansteuerbeginn Nacheinspritzung
+0x1F61,zumAD_NE,2,1.000000,0.000000,uS,6.2f,Ansteuerdauer Nacheinspritzung
+0x1F8E,mrmM_EDELB,2,0.010000,0.000000,mm^3,6.2f,M_E begrenzte Abgleichmenge
+0x1F9A,mroKickDwn,2,1.000000,0.000000,-,6.2f,Schalter Kickdown
+0x1FB0,camS_KO,2,1.000000,0.000000,-,6.2f,Schalter Klimakompressor
+0x1FB1,camS_AC,2,1.000000,0.000000,-,6.2f,Schalter Klimabereitschaft
+0x2000,admWTF,2,0.100000,-273.140000,Grad C,6.2f,WTF Rohwert Wassertemperatur
+0x2001,admLTF,2,0.100000,-273.140000,Grad C,6.2f,LTF Rohwert Lufttemperatur
+0x2002,admKTF,2,0.100000,-273.140000,Grad C,6.2f,KTF Rohwert Kraftstofftemperatur
+0x2006,admVDF,2,0.001000,0.000000,bar,6.2f,VDF Rohwert Vorfoerderdruck
+0x2041,admADF,2,1.000000,0.000000,mbar,6.2f,ADF Rohwert Atmosphaerendruck
+0x2042,admLDF,2,1.000000,0.000000,mbar,6.2f,LDF Rohwert Ladedruck
+0x2060,admPWG,2,0.010000,0.000000,%,6.2f,PWG Rohwert Pedalwertgeber Poti 1
+0x2061,admLMM,2,0.010000,0.000000,%,6.2f,LMM Rohwert Luftmasse
+0x2065,admUBT,2,0.023620,0.000000,V,6.2f,UBT Rohwert Batteriespannung
+0x2152,gsoGS_Pha,2,1.000000,0.000000,-,6.2f,Gluehzeitsteuerung Gluehphase
+0x2160,caoVERB,2,1.000000,0.000000,ul,6.2f,Kraftstoffverbrauch fuer CAN DDE4-VERBRAUCH
+0x2210,mroMD_SOLL,2,2.000000,0.000000,Nm,6.2f,Sollmoment
+0x2211,mroMD_FAHR,2,2.000000,0.000000,Nm,6.2f,Fahrerwunschmoment
+0x2212,mroMD_REIB,2,2.000000,0.000000,Nm,6.2f,Reibmoment
+0x2220,camN_EL,2,0.091556,0.000000,1/min,6.2f,MLS Drehzahlstufe E-Luefter
+0x2F74,dimF_MFL,2,1.000000,0.000000,-,6.2f,FGR Multifunktionslenkrad
+0x2F75,mrmL_FGR,2,1.000000,0.000000,-,6.2f,FGR-Status-Indicator-Lampe ueber CAN
+0x2FF6,admUG1,2,0.017644,0.000000,V,6.2f,"UG1 Rohwert Speisespannung 1 fuer Pedalwertgeber 2, Ladedruckfuehler, Luftmassenmesser"
+0x2FF7,admUG2,2,0.017644,0.000000,V,6.2f,"UG2 Rohwert Speisespannung 2 fuer Pedalwertgeber 1, Kraftstoff- ,Vorfoerderdruckfuehler"
+0x2FF8,admUC1,2,0.020572,0.000000,V,6.2f,"UC1 Rohwert Kondensatorspannung 1 fuer Zylinder 1,2,3"
+0x2FF9,admUC2,2,0.020572,0.000000,V,6.2f,"UC2 Rohwert Kondensatorspannung 2 fuer Zylinder 4,5,6"
+0x2FFA,admPGS,2,0.010000,0.000000,%,6.2f,PGS Rohwert Pedalwertgeber Poti 2
+0x2FFC,admKDF,2,10.235414,0.000000,bar,6.2f,KDF Rohwert Raildruck
+0x2FFE,admIDV,2,4.995005,0.000000,mA,6.2f,IDV Rohwert Istwert Stromregelung Druckregelventil
+0x3002,anoU_WTF,2,0.004888,0.000000,V,6.2f,WTF Spannung Wassertemperaturfuehler
+0x3004,anoU_LDF,2,0.004888,0.000000,V,6.2f,LDF Spannung Ladedruckfuehler
+0x3006,anoU_PGS,2,0.004888,0.000000,V,6.2f,PGS Spannung Pedalwertgeber Poti 2
+0x3008,anoU_UC1,2,0.004888,0.000000,V,6.2f,"UC1 Spannung Kondensatorspannung 1 fuer Zylinder 1,2,3"
+0x3009,anoU_UC2,2,0.004888,0.000000,V,6.2f,"UC2 Spannung Kondensatorspannung 2 fuer Zylinder 4,5,6"
+0x300A,anoU_KDF,2,0.004888,0.000000,V,6.2f,KDF Spannung Raildruckfuehler
+0x300C,anoU_IDV,2,0.004888,0.000000,V,6.2f,IDV Spannung zur Strommessung Druckregelventil
+0x300E,anoU_LTF,2,0.004888,0.000000,V,6.2f,LTF Spannung Lufttemperaturfuehler
+0x3011,anoU_ADF,2,0.004888,0.000000,V,6.2f,ADF Spannung Atmosphaerendruckfuehler
+0x3013,anoU_UBT,2,0.004888,0.000000,V,6.2f,UBT Spannung Batteriespannung
+0x3016,anoU_UG1,2,0.017644,0.000000,V,6.2f,"UG1 Spannung Speisespannung 1 fuer Pedalwertgeber 2, Ladedruckfuehler, Luftmassenmesser"
+0x3017,anoU_UG2,2,0.017644,0.000000,V,6.2f,"UG2 Spannung Speisespannung 2 fuer Pedalwertgeber 1, Kraftstoff- ,Vorfoerderdruckfuehler"
+0x301A,anoU_VDF,2,0.004888,0.000000,V,6.2f,VDF Spannung Vorfoerderdruckfuehler
+0xDC86,mrmM_EFAHR,2,0.010000,0.000000,mm^3,6.2f,M_E Fahrmenge nach Laufruheregler
+0xDC87,mrmM_ELRR,2,0.010000,0.000000,mm^3,6.2f,M_E Menge aus Laufruheregler
+0xDC88,mrmM_EARD,2,0.010000,0.000000,mm^3,6.2f,M_E Menge ARD - Gesamt vor Begrenzung
+0xDC89,mroM_ARDFF,2,0.010000,0.000000,mm^3,6.2f,M_E Menge ARD - Fuehrungsformer
+0xDC90,mroLRRReg,2,1.000000,0.000000,1/min,6.2f,Nsegm Segmentdrehzahl-Regelabweichung fuer Laufruheregler
+0xDF00,fboDIALA,2,1.000000,0.000000,-,6.2f,Diagnose - Lampe Status (255 = EIN)
+0xDF01,fbmDIA_C,2,1.000000,0.000000,-,6.2f,Diagnoselampe ueber CAN
+0xDF02,fbmMIL_C,2,1.000000,0.000000,-,6.2f,MIL Malfunction Indikator Lamp ueber CAN
+0xDF08,mroFGR_ABN,2,1.000000,0.000000,-,6.2f,FGR Abschalt-Bedingungen
+0xDF0E,aroIST_5,2,0.100000,0.000000,mg/Hub Luft,6.2f,M_L normierte Luftmasse (nicht T_L/P_ADF-korrig.)
+0xDF13,mrmLLRIAnt,2,0.010000,0.000000,mm^3,6.2f,M_E Menge aus I-Anteil des PI-Leerlaufreglers
+0xDF14,mrmLLRPAnt,2,0.010000,0.000000,mm^3,6.2f,M_E Menge aus P-Anteil des PI-Leerlaufreglers
+0xDF15,mroLLRDAnt,2,0.010000,0.000000,mm^3,6.2f,M_E Menge aus Leerlaufregler-DT1-Vorsteuerung
+0xDF20,mrmCASE_L,2,1.000000,0.000000,-,6.2f,LLR Zustand-Bits der Leerlaufregelung
+0xDF21,mrmCASE_A,2,1.000000,0.000000,-,6.2f,ARD Zustand-Bits der aktiven Ruckeldaempfung
+0xDF70,fboS_00,2,1.000000,0.000000,-,6.2f,Defekte Pfade 1 bis 16
+0xDF72,fboS_02,2,1.000000,0.000000,-,6.2f,Defekte Pfade 17 bis 32
+0xDF74,fboS_04,2,1.000000,0.000000,-,6.2f,Defekte Pfade 33 bis 48
+0xDF76,fboS_06,2,1.000000,0.000000,-,6.2f,Defekte Pfade 49 bis 64
+0xDF78,fboS_08,2,1.000000,0.000000,-,6.2f,Defekte Pfade 65 bis 80
+0xE4D0,camT_UMG,2,0.100000,-273.140000,Grad C,6.2f,Umgebungstemperatur aus CAN
+0xE4D1,camS_HZL,2,1.000000,0.000000,-,6.2f,Anforderung Heizleistung von Klimasteuergeraet
+0xE4D2,klmKLI_GEF,2,1.000000,0.000000,-,6.2f,Klimaanlage verbaut

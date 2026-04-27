@@ -1,0 +1,217 @@
+addr,name,size,factor_a,factor_b,unit,format,description
+0x0004,CoEng_rTrq,2,0.393699,0.000000,%,8.4f,Verhältnis aktuelles Moment zu Maximalmoment
+0x0005,CTSCD_tClntLin,2,1.000240,-41.084307,deg C,8.3f,linearisierter Wert aus HWK vorm Aufruf der Übergangsfunktion
+0x000B,BPSCD_pLin,2,10.002401,0.000000,hPa,8.2f,Mittelere Ladedruck-Wert (liniarisiert)
+0x000C,Eng_nAvrg_Carb,2,0.250000,0.000000,rpm,8.2f,Avarage engine speed
+0x000D,VSSCD_vSensVal,2,0.999001,0.000000,km/h,8.4f,Vehicle speed sensed value
+0x000F,AFSCD_tAir_mp,2,1.000240,-41.084307,deg C,8.3f,linearisierter Wert aus HWK vorm Aufruf der Übergangsfunktion
+0x0010,AFSCD_dmAirRawPerTime,2,0.036001,0.000000,Kg/h,8.3f,LMM Luftmassenmesser HFM
+0x0021,DSMDur_ctDfctDur11,2,1.000000,0.000000,-,8.2f,OBD: Travelled Distance with MIL on
+0x0029,DSM_stSysLamp,2,1.000000,0.000000,-,5.1f,Status of Sys lamp
+0x002A,DSM_stMIL,2,1.000000,0.000000,-,5.1f,Status of MIL
+0x002B,CTSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Actual Engine Temperature
+0x002C,CTSCD_tClnt,2,0.016787,-50.138440,deg C,8.3f,Coolant Temperature
+0x002D,Eng_nAvrg,2,0.125002,0.000000,rpm,8.2f,Average engine speed
+0x002E,AFSCD_dmAirPerTime,2,0.048829,-1599.971484,Kg/h,8.3f,airmass per unit time
+0x002F,BattCD_u,2,0.002456,0.000000,V,8.1f,Battery Voltage
+0x0030,VehDa_lSum,2,8196.721311,0.000000,m,13.2f,Driven length
+0x0031,LIGov_nSetpoint,2,0.125002,0.000000,rpm,8.2f,Increased Idle Speed
+0x0032,VSSCD_v,2,0.003815,0.000000,km/h,8.4f,vehicle speed
+0x0033,VSSCD_a,2,0.000305,-9.999899,m/s^2,8.5f,Actual Vehicle Acceleration
+0x0034,InjCtl_qSet,2,0.003052,-99.998993,mg/cyc,8.4f,Actual Injection Quantity
+0x0035,Rail_dvolMeUnSet,2,10.000000,0.000000,mm3/s,8.1f,flow of fuel set value for MeUn
+0x0036,IATSCD_tAirCats,2,0.016787,-50.138440,deg C,8.3f,charge air temperature current value
+0x0037,IATSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Actual Intake Air Temperature
+0x0038,IATSCD_tAir,2,0.016787,-50.138440,deg C,8.3f,Actual Intake Air Temperature
+0x0039,BPSCD_uRawVal,2,0.610958,0.000000,mV,8.1f,Actual Boost Pressure
+0x003A,BPSCD_pOutVal,2,0.125002,0.000000,hPa,8.2f,Actual Boost Pressure
+0x003B,T15CD_stWakeUpRawVal_mp,2,1.000000,0.000000,-,5.1f,raw value of Wake Up input
+0x003C,AccPed_trqDes,2,0.114445,-2500.058653,Nm,8.3f,driver torque raw value of propulsion
+0x003E,AddPCD_stCo_mp,2,1.000000,0.000000,-,5.1f,state of AddPCD-statemachine
+0x003F,AddPCD_volAddTotFine_mp,2,0.001000,0.000000,ml,13.5f,total injected add.volume fine resolution
+0x0040,AddPmp_volAddTotDem,2,0.012500,0.000000,ml,8.3f,total desired additive quantity since last service
+0x0041,AirCtl_stAirCtlBits1_mp,2,1.000000,0.000000,-,8.2f,Status of AirCtl as LowWord-LowByte
+0x0042,AirCtl_stAirCtlBits1_mp1,2,1.000000,0.000000,-,8.2f,Status of AirCtl as LowWord-HighByte
+0x0043,AirCtl_stAirCtlBits2_mp,2,1.000000,0.000000,-,8.2f,Status of AirCtl as HighWord-LowByte
+0x0044,AirCtl_stAirCtlBits2_mp1,2,1.000000,0.000000,-,8.2f,Status of AirCtl as HighWord-HighByte
+0x0045,MeUn_iSet_mp,2,0.228891,0.000000,mA,8.2f,electrical set value of current for metering unit
+0x0046,OCBS_bosbtvfbk,2,1.000000,0.000000,%,5.1f,Output availibility BOS messages
+0x0047,OPSCD_stpOEL,2,1.000000,0.000000,-,5.1f,Oil pressure sensor signal
+0x0048,APPCD_rLinAPP1,2,0.003052,0.000000,%,8.4f,Accelerator Pedal 1 linearised value in percent
+0x0049,APPCD_rLinAPP2,2,0.003052,0.000000,%,8.4f,Accelerator Pedal 2 linearised value in percent
+0x004A,FlSys_volDetRefuel,2,0.050000,0.000000,l,8.3f,detected refuel quantity
+0x004B,AFSCD_rAir,2,0.010000,0.000000,%,8.4f,Output for HFM6
+0x004C,FlSys_volTotalRef_mp,2,0.050000,0.000000,l,8.3f,fuel level before tank stop
+0x004D,PCR_stMonitor,2,1.000000,0.000000,-,5.1f,Status of PCR monitoring
+0x004E,PFlt_dvol,2,0.100000,0.000000,m^3/h,8.3f,air volume per time unit across particle filter
+0x004F,PFlt_facMltCor_mp,2,0.000122,0.000000,-,8.6f,correction factor
+0x0050,AFSCD_mAirPerCyl,2,0.048829,-1599.971484,mg/Hub,8.3f,angesaugte Luftmasse pro Zylinder
+0x0051,AFSCD_tiRaw,2,0.100000,0.000000,us,8.3f,duty cycle of the air temparature signal
+0x0052,AFSCD_dmAirNorm,2,0.048829,-1599.971484,Kg/h,8.3f,HFM Luftmassenstrom
+0x0053,PFlt_lSum_mp,2,1.000000,0.000000,m,13.2f,ges. gefahrene Strecke bei der letzten erfolgr. Regeneration
+0x0054,PFlt_pDiff,2,0.125002,0.000000,hPa,8.2f,Differenzdruck über Partikelfilter
+0x0055,InjCtl_qCurr,2,0.003052,-99.998993,mg/cyc,8.4f,Einspritzmenge aktueller Wert
+0x0056,AirCtl_mGvnrDvt,2,0.048829,-1599.971484,mg/Hub,8.3f,Aircontrol governor deviation
+0x0057,CoEng_trqInrSet,2,0.114445,-2500.060084,Nm,8.3f,Inner torque set value
+0x0058,IndSys_rVSA,2,0.010000,0.000000,%,8.4f,duty-cycle for variable swirl actuator
+0x0059,InjCtl_qSetUnBal,2,0.003052,-99.998993,mg/cyc,8.4f,Einspritzmenge Sollwert ohne Mengenausgleichsregelung
+0x005A,GlwCD_RawVal_mp,2,1.000000,0.000000,-,5.1f,request to glow-controller - identifier0
+0x005B,FTSCD_tFuel,2,0.016787,-50.138440,deg C,8.3f,Kraftstofftemperatur
+0x005C,BrkCD_stMnSwtRawVal,2,1.000000,0.000000,-,5.1f,Brake main switch raw value
+0x005D,BrkCD_stRedSwtRawVal,2,1.000000,0.000000,-,5.1f,Brake redundant switch raw value
+0x005E,ConvCD_stRawVal,2,1.000000,0.000000,-,5.1f,Clutch switch raw value
+0x005F,OCBS_bos01_w,2,12.499234,0.000000,km,8.1f,linearisierter APP1
+0x0060,OCBS_zrbosmld,2,1.000000,0.000000,-,5.1f,linearisierter APP2
+0x0061,GlwCtl_stLampOut,2,1.000000,0.000000,-,5.1f,Zustand der Glühanzeige
+0x0062,EBAFCD_stSigOut,2,1.000000,0.000000,-,5.1f,Ausgang Glührelais
+0x0063,PFlt_stEngPOp5_mp,2,1.000000,0.000000,-,5.1f,engine state calculated by range check 5
+0x0064,APPCD_uRawAPP1,2,0.000611,0.000000,V,8.1f,Fahrpedal 1 Position Rohwert
+0x0065,APPCD_uRawAPP2,2,0.000611,0.000000,V,8.1f,Fahrpedal 2 Position Rohwert
+0x0066,APPCD_rFlt,2,0.003052,0.000000,%,8.4f,gefiltertes Pedalwertgebersignal
+0x0068,PFlt_mSot,2,0.010000,0.000000,g,8.4f,Rußmasse im Partikelfilter
+0x0069,PFlt_mSotMeas_mp,2,0.010000,0.000000,g,8.4f,soot mass additive offset corrected
+0x006A,PFlt_mSotMeasRaw_mp,2,0.010000,0.000000,g,8.4f,air stream resistance converted to soot mass
+0x006B,PFlt_mSotSim_mp,2,0.010000,0.000000,g,8.4f,simulated soot mass
+0x006C,PFlt_mAsh_mp,2,0.010000,0.000000,g,8.4f,Ölaschenmasse
+0x006D,PFlt_numEngPOp_mp,2,1.000000,0.000000,-,5.1f,Regeneriermaßnahme aufgrund PFlt- und Motorzustand
+0x006E,APSCD_pVal,2,0.125002,0.000000,hPa,8.2f,Atmosphärendruck
+0x006F,APSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Rohspannung ADC-Signal Atmosphärendruck
+0x0070,PFlt_numRgn_mp,2,1.000000,0.000000,-,5.1f,gesamte Regenerationsanforderung
+0x0071,PFlt_tPreFlt_mp,2,0.016787,-50.138440,deg C,8.3f,PFlt_tPre PT1 filtered
+0x0072,PFlt_vVehFlt_mp,2,0.003815,0.000000,km/h,8.4f,VSSCD_v PT1 filtered
+0x0073,HWEMon_numRecovery,2,1.000000,0.000000,-,8.2f,Herkunft des letzten Reset ( >0 = Recovery )
+0x0074,Clg_tiDynTst,2,0.010000,0.000000,s,13.4f,actual time of test
+0x0075,Clg_dtDynTst,2,0.100000,0.000000,deg C,8.3f,rise in temperature since start of test
+0x0076,AFSCD_tiRaw1,2,0.100000,0.000000,us,8.3f,Output for HFM6
+0x0077,Clg_tEndDynTst,2,1.000240,-41.084307,deg C,8.3f,CTSCD_tClnt at the end of test
+0x0078,IATSCD_uRawCats,2,0.610958,0.000000,mV,8.1f,Output for IATSCD
+0x0079,Rail_stCtlLoop,2,1.000000,0.000000,-,5.1f,Output for Rail status
+0x007A,EGRCD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zür Endstufenansteuerung
+0x007B,BPACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zür Endstufenansteuerung
+0x007C,GlwCtl_rPwrOut,2,1.000000,0.000000,-,5.1f,Glühanforderung
+0x007D,IATSCD_tAirLinCats,2,0.016787,-50.138440,deg C,8.3f,Charge air temperature without substitute value
+0x007E,PFlt_qFl_mp,2,0.010000,0.000000,l,8.4f,verbrauchter Treibstoff seit der letzten erfolgreichen Regeneration
+0x007F,MeUnCD_iActFlt_mp,2,0.228891,0.000000,mA,8.2f,actual value of current filtered by metering unit current regulator
+0x0080,DSM_ctOBDPath,2,1.000000,0.000000,-,5.1f,Pre Supply Pump output value
+0x0081,PSPCD_dvolOut,2,0.208446,-6830.158002,l/h,8.4f,Vorförderpumpe Ansteuertastverhältnis
+0x0082,AltCD_rAltLoad,2,0.003052,0.000000,%,8.4f,linearisiertes und fehlerentprelltes Generatorlastsignals
+0x0083,CrCtl_vDes,2,0.003815,0.000000,km/h,8.4f,setpoint speed cruise control
+0x0084,VehDa_rVn,2,0.000002,0.000000,(km/h)/rpm,9.7f,ratio of vehicle speed to engine speed
+0x0085,DSM_stCycles,2,1.000000,0.000000,-,5.1f,Status of DSM trigger cycles
+0x0086,DSM_tiDCDelay_mp,2,1.000000,0.000000,-,8.2f,actual time for Dcy delay time
+0x0087,DSM_ctTstPath,2,1.000000,0.000000,-,8.2f,Number of in this driving cycle tested  fault paths
+0x0088,AirCtl_mDesVal,2,0.048829,-1599.971484,mg/Hub,8.3f,Luftmassensollwert
+0x0089,DSM_ctRdyActCyc_mp,2,1.000000,0.000000,-,5.1f,Status for each Readinessbit only in the current driving cycle
+0x008A,PCR_pDesVal,2,0.125002,0.000000,hPa,8.2f,Ladedrucksollwert
+0x008B,DSM_ctRdyTstCompr_mp,2,1.000000,0.000000,-,5.1f,Number of in this cycle tested fault paths belonging to Readiness Bit Comprehensive Components
+0x008C,PFlt_resFlow,2,0.001000,0.000000,hPa/(m^3/h),8.5f,air stream resistance
+0x008D,CrCtl_numGear,2,1.000000,0.000000,-,5.1f,gear for cruise control
+0x008E,CoEng_stShutOff,2,1.000000,0.000000,-,5.1f,global shut off reasons ( afterrun / reversible / irreversible
+0x008F,CoEng_trqInrLtd,2,0.114445,-2500.060084,Nm,8.3f,Wassertemperatur Spannungsrohwert
+0x0090,StSys_trqStrt,2,0.114445,-2500.060084,Nm,8.3f,Kühlmitteltemperatur
+0x0091,CrCtl_trqDes,2,0.114445,-2500.058653,Nm,8.3f,mittlere Motordrehzahl
+0x0092,DSM_ctRdyTstEGR_mp,2,1.000000,0.000000,-,5.1f,Number of in this cycle tested fault paths belonging to Readiness Bit EGR
+0x0093,DSM_ctRdyTstFuel_mp,2,1.000000,0.000000,-,5.1f,Batteriespannung
+0x0094,CoEng_trqLimMin_mp,2,0.114445,-2500.060084,Nm,8.3f,Fahrzeuggeschwindigkeit
+0x0095,CoVM_trqPrpDes,2,0.114445,-2500.058653,Nm,8.3f,desired torque for propulsion
+0x0096,FMTC_trqInr,2,0.114445,-2500.060084,Nm,8.3f,aktuelles rückgerechnetes inneres Motormoment
+0x0097,LIGov_trq,2,0.114445,-2500.060084,Nm,8.3f,Leerlaufreglermoment
+0x0098,DSM_ctRdyTstMisf_mp,2,1.000000,0.000000,-,5.1f,Untergrenze Drehzahlintervall des LIGov
+0x0099,AOHt_stShutOff_mp,2,1.000000,0.000000,-,8.2f,overview to all switch off contitions
+0x009A,FrmMng_lSum,2,8.000000,0.000000,km,13.2f,Ladelufttemperatur nach Ladeluftkühler
+0x009B,OxiCCD_tPre,2,0.016787,-50.138440,deg C,8.3f,Lufttemperatur Spannungsrohwert
+0x009C,DSM_stRdyAB,2,1.000000,0.000000,-,8.2f,Ansauglufttemperatur
+0x009D,PFltCD_tPre,2,0.016787,-50.138440,deg C,8.3f,Spannungsrohwert des Ladedrucksensors
+0x009E,PCVCD_iActVal,2,0.228891,0.000000,mA,8.2f,Ladedruckwert
+0x009F,VehDa_tiEngOn,2,99.900100,0.000000,s,13.2f,Erfassung der aktuellen Betriebszeit
+0x00A0,Gearbx_swtType,2,1.000000,0.000000,-,5.3f,Abgastemperatur vor Oxidationskatalysator
+0x00A1,InjVlv_nCyl1,2,0.125002,0.000000,rpm,8.2f,Abgastemperatur vor Oxidationskatalysator Rohwert
+0x00A2,InjVlv_nCyl2,2,0.125002,0.000000,rpm,8.2f,Abgastemp. vor Partikelfilter
+0x00A3,InjVlv_nCyl3,2,0.125002,0.000000,rpm,8.2f,Abgastemp. vor Partikelfilter erster Sensor
+0x00A4,InjVlv_nCyl4,2,0.125002,0.000000,rpm,8.2f,cylinder specific engine speed for cylinder 4
+0x00A5,InjVlv_nCyl5,2,0.125002,0.000000,rpm,8.2f,cylinder specific engine speed for cylinder 5
+0x00A6,InjVlv_nCyl6,2,0.125002,0.000000,rpm,8.2f,cylinder specific engine speed for cylinder 6
+0x00A7,InjVlv_qFBCCyl1,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 1
+0x00A8,InjVlv_qFBCCyl2,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 2
+0x00A9,InjVlv_qFBCCyl3,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 3
+0x00AA,InjVlv_qFBCCyl4,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 4
+0x00AB,InjVlv_qFBCCyl5,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 5
+0x00AC,InjVlv_qFBCCyl6,2,0.003052,-99.998993,mg/hub,8.4f,cylinder specific FBC adjustment quantity for cylinder 6
+0x00AD,PFlt_resFlowOfs,2,0.001000,0.000000,hPa/(m^3/h),8.5f,air stream resistance offset value
+0x00AE,AddPCD_volAddTot,2,0.012500,0.000000,ml,8.3f,source of activation for electrical power stage of EBAFCD output
+0x00AF,OPSCD_stSigOut,2,1.000000,0.000000,-,5.1f,Ausgangssignal Öldruckschalter
+0x00B0,EngM_stSync,2,1.000000,0.000000,-,5.1f,Meta-Status der KW- und NW-Ereignisverwaltung (Motorpositions-Management)
+0x00B1,InjCrv_phiPiI1Des,2,0.002930,-90.351389,deg CrS,8.4f,value for SOE angle-component PiI1
+0x00B2,InjCrv_phiPiI2Des,2,0.002930,-90.351389,deg CrS,8.4f,value for SOE angle-component PiI2
+0x00B3,InjCrv_phiPiI3Des,2,0.002930,-90.351389,deg CrS,8.4f,value for SOE angle-component PiI3
+0x00B4,InjVCD_tiPiI1ET_mp,2,0.152594,0.000000,us,8.2f,energising time of pilot injection 1
+0x00B5,InjVCD_tiPiI2ET_mp,2,0.152594,0.000000,us,8.2f,energising time of pilot injection 2
+0x00B6,InjVCD_tiPiI3ET_mp,2,0.152594,0.000000,us,8.2f,energising time of pilot injection 3
+0x00B7,InjCrv_qPiI1Des,2,0.001526,0.000000,mg/inj,8.4f,desired PiI1 quantity including cylinder balancing ...
+0x00B8,InjCrv_qPiI2Des,2,0.001526,0.000000,mg/inj,8.4f,desired PiI2 quantity including cylinder balancing ...
+0x00B9,InjCrv_qPiI3Des,2,0.001526,0.000000,mg/inj,8.4f,desired PiI3 quantity including cylinder balancing ...
+0x00BA,InjCrv_stPiI1_mp,2,1.000000,0.000000,-,5.1f,release state of PiI1
+0x00BB,InjCrv_stPiI2_mp,2,1.000000,0.000000,-,5.1f,release state of PiI2
+0x00BC,InjVCD_tiMI1ET_mp,2,0.152594,0.000000,us,8.2f,energising time of main injection
+0x00BD,InjCrv_qPiI1Bas_mp,2,0.001526,0.000000,mg/inj,8.4f,injection quantity PiI1 base value
+0x00BE,InjCrv_qPiI2Bas_mp,2,0.001526,0.000000,mg/inj,8.4f,injection quantity PiI2 base value
+0x00BF,InjCrv_phiMI1Des,2,0.002930,-90.351389,deg CrS,8.4f,"injection quantity MI1, if 1st injection"
+0x00C0,InjCrv_tiMI1ET,2,0.152594,0.000000,us,8.2f,estimated ET of MI1
+0x00C1,InjCrv_qMI1Des,2,0.001526,0.000000,mg/inj,8.4f,setpoint quantity for main injection
+0x00C2,RailCD_pPeak,2,0.030518,0.000000,bar,5.3f,maximaler Raildruck der letzten 10ms
+0x00C3,Rail_pSetPoint,2,0.030518,0.000000,bar,5.3f,Raildruck-sollwert
+0x00C4,InjCrv_phiPoI1Des,2,0.002930,-90.351389,deg CrS,8.4f,basevalue ( angle
+0x00C5,InjCrv_phiPoI2Des,2,0.002930,-90.351389,deg CrS,8.4f,basevalue ( angle
+0x00C6,InjVCD_tiPoI1ET_mp,2,0.152594,0.000000,us,8.2f,energising time of post injection 1
+0x00C7,InjVCD_tiPoI2ET_mp,2,0.152594,0.000000,us,8.2f,energising time of post injection 2
+0x00C8,APPCD_stKickDown,2,1.000000,0.000000,-,5.1f,kick down state of accelerator pedal
+0x00C9,FrmMng_swtAC_mp,2,1.000000,0.000000,-,5.1f,Switch air conditioning compressor
+0x00CB,CoEng_voltotFlConsum,2,20.844624,-683015.800225,ul,13.2f,Fuel consumption integral
+0x00CC,PFlt_resFlowRaw_mp,2,0.001000,0.000000,hPa/(m^3/h),8.5f,air stream resistance raw value
+0x00CD,DSM_stRdyCD,2,1.000000,0.000000,-,8.2f,Readiness status for Diagnostic interface SAE J1979 PID1 Byte C + D
+0x00CE,EngM_trqFrc,2,0.114445,-2500.060084,Nm,8.3f,current friction torque
+0x00CF,FrmMng_nFan,2,0.011445,0.000000,1/min,8.3f,Fan-speed
+0x00D0,CrCCD_stKey,2,1.000000,0.000000,-,5.1f,Return value of key pressed
+0x00D1,CrCtl_stLampOut,2,1.000000,0.000000,-,5.1f,Status Indikator Lamp FGR
+0x00D2,PFlt_stEngPOp,2,1.000000,0.000000,-,5.1f,Motorbetriebspunkt
+0x00D3,RailCD_uPeakRaw,2,0.610958,0.000000,mV,8.1f,Rohwert des Raildrucks
+0x00D4,FTSCD_uRaw,2,0.610958,0.000000,mV,8.1f,Spannungsrohwert der Kraftstoffstemperatur
+0x00D5,OxiCCD_uRawTempPre,2,0.610958,0.000000,mV,8.3f,Exhaust gas temperature (before oxidation catalyst
+0x00D6,PFltCD_uRawTempPre,2,0.610958,0.000000,mV,8.1f,Spannungsrohwert der Abgastemperatur vor dem Partikelfilter
+0x00D7,DSMDur_ctDfctDur1,2,1.000000,0.000000,-,8.2f,Defect duration counter value
+0x00D8,DSMDur_ctDfctDur2,2,1.000000,0.000000,-,8.2f,Defect duration counter 2 value
+0x00D9,DSMDur_stGlobalDefCnt_mp,2,1.000000,0.000000,-,5.1f,enable and reset status of the two global duration counters
+0x00DA,Gearbx_stGear,2,1.000000,0.000000,-,5.1f,Output for status gear
+0x00DB,EngM_stOut,2,1.000000,0.000000,-,5.1f,Output for engine mechanics
+0x00DC,ASDdc_trq,2,0.114445,-2500.060084,Nm,8.3f,ASD disturbance compensator torque output
+0x00DD,PFlt_stEngPOp1_mp,2,1.000000,0.000000,-,5.1f,Statuswort Regeneration unterbrochen
+0x00DE,PFlt_stEngPOp2_mp,2,1.000000,0.000000,-,5.1f,Regeneration Blockierung und Freigabe
+0x00DF,FlFCD_stFlFltRawVal,2,1.000000,0.000000,-,5.1f,fuel filter temp and pressure monitoring
+0x00E2,LIGov_st,2,1.000000,0.000000,-,8.2f,state of LIGov
+0x00E3,FrmMng_tEnv,2,0.016787,-50.138440,deg C,8.3f,Environment air temperature
+0x00E5,ACCD_stACPresent,2,1.000000,0.000000,-,5.1f,AC is present in the vehicle
+0x00E6,Ertm_tiload_u32,2,0.010000,0.000000,%,13.4f,dutycycle Ubatt-corrected
+0x00E8,FanCD_dcycRaw_mp,2,0.010000,0.000000,%,8.4f,dutycycle Ubatt-corrected
+0x00E9,AOHtCD_rOut_mp,2,0.010000,0.000000,%,8.4f,Meßpunkt fuer korrigiertes Tastverhaeltnis der Zuheizeransteuerung
+0x00EA,TVACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zür Endstufenansteuerung
+0x00EB,VSACD_rOut,2,0.010000,0.000000,%,8.4f,Tastverhältnis zür Endstufenansteuerung
+0x00EC,MeUnCD_dcycOut_mp,2,0.010000,0.000000,%,8.4f,Ausgangstastverhältnis
+0x00ED,PCVCD_dcycOut_mp,2,0.010000,0.000000,%,8.4f,Ausgangstastverhältnis
+0x00EE,PFlt_stEngPOp3_mp,2,1.000000,0.000000,-,5.1f,engine state calculated by range check 3
+0x00EF,PFlt_stEngPOp4_mp,2,1.000000,0.000000,-,5.1f,engine state calculated by range check 4
+0x00F0,CrCtl_stShutOffCode1_mp,2,1.000000,0.000000,-,8.2f,Shutoff code
+0x00F1,CrCtl_stShutOffCode1_mp1,2,1.000000,0.000000,-,8.2f,Shutoff code
+0x00F2,CrCtl_stShutOffCode2_mp,2,1.000000,0.000000,-,8.2f,Shutoff code
+0x00F3,CrCtl_stShutOffCode2_mp1,2,1.000000,0.000000,-,8.2f,Shutoff code
+0x00F4,CrCtl_stShutOffFrz1_mp,2,1.000000,0.000000,-,8.2f,Shutoff code Frz
+0x00F5,CrCtl_stShutOffFrz1_mp1,2,1.000000,0.000000,-,8.2f,Shutoff code Frz
+0x00F6,CrCtl_stShutOffFrz2_mp,2,1.000000,0.000000,-,8.2f,Shutoff code Frz
+0x00F7,CrCtl_stShutOffFrz2_mp1,2,1.000000,0.000000,-,8.2f,berechneter Abgasvolumenstrom im Partikelfilter
+0x00F8,BrkCD_tiDebTmrPlaus_mp,2,10.000000,0.000000,ms,8.1f,Maximaldruck Motorschutz
+0x00F9,PFlt_st1_mp,2,1.000000,0.000000,-,8.2f,lowWord-lowByte of regeneration status word
+0x00FA,PFlt_st1_mp1,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters  LowByte (->Signals)
+0x00FB,PFlt_st2_mp,2,1.000000,0.000000,-,8.2f,highWord-lowByte of regeneration status word
+0x00FC,PFlt_st2_mp1,2,1.000000,0.000000,-,8.2f,Status des Partikelfilters  HighByte (->Signals)
+0x00FD,HWEMon_recLocLow_mp,2,1.000000,0.000000,-,8.2f,lowWord-lowByte adress recoverylocation
+0x00FE,HWEMon_recLocLow_mp1,2,1.000000,0.000000,-,8.2f,LowAdresse recovery location
+0x00FF,HWEMon_recLocHigh_mp,2,1.000000,0.000000,-,8.2f,HighAdresse recovery location

@@ -108,7 +108,7 @@ class KWP:
             d=s.port.read(len(fr)-len(echo))
             if d: echo+=d
         if echo: log.debug(f"Echo[{len(echo)}]: {echo.hex(' ')}")
-        # Read response header (4 bytes min)
+        # Read response header (3 bytes min for BMW-FAST)
         t0=time.time(); buf=b''
         while len(buf)<4 and time.time()-t0<to:
             d=s.port.read(4-len(buf))
@@ -142,7 +142,7 @@ class KWP:
 
     def start(s):
         for m in [0x81,0x01,0x89]:
-            r=s._txrx(bytes([0x10,m]))
+            r=s._txrx(bytes([0x10,m]),to=0.5)
             if r and len(r)>3 and r[3]==0x50: log.info(f"Session 0x{m:02X} ✓"); return True
         return False
 

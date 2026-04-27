@@ -1,0 +1,443 @@
+[
+  {
+    "typkey": "AL71",
+    "series": "E46",
+    "engine": "M47",
+    "displacement": "320d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "320d_M47_LIM"
+  },
+  {
+    "typkey": "AL72",
+    "series": "E46",
+    "engine": "M47",
+    "displacement": "320d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "320d_M47_LIM"
+  },
+  {
+    "typkey": "AL91",
+    "series": "E46",
+    "engine": "M57",
+    "displacement": "330d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "330d_M57_LIM"
+  },
+  {
+    "typkey": "AL92",
+    "series": "E46",
+    "engine": "M57",
+    "displacement": "330d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "330d_M57_LIM"
+  },
+  {
+    "typkey": "AP71",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "320d_M47/TU_TOUR"
+  },
+  {
+    "typkey": "AP72",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "320d_M47/TU_TOUR"
+  },
+  {
+    "typkey": "AP91",
+    "series": "E46",
+    "engine": "M57",
+    "displacement": "330d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "330d_M57_TOUR"
+  },
+  {
+    "typkey": "AP92",
+    "series": "E46",
+    "engine": "M57",
+    "displacement": "330d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "330d_M57_TOUR"
+  },
+  {
+    "typkey": "AS71",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "320d_M47/TU_LIM"
+  },
+  {
+    "typkey": "AS72",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "320d_M47/TU_LIM"
+  },
+  {
+    "typkey": "AT71",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320td",
+    "body": "COMP",
+    "market": "EUR_LL",
+    "model": "320td_M47/TU_COMP"
+  },
+  {
+    "typkey": "AT72",
+    "series": "E46",
+    "engine": "M47TU",
+    "displacement": "320td",
+    "body": "COMP",
+    "market": "EUR_RL",
+    "model": "320td_M47/TU_COMP"
+  },
+  {
+    "typkey": "AV72",
+    "series": "E46",
+    "engine": "M47",
+    "displacement": "320d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "320d_M47_LIM"
+  },
+  {
+    "typkey": "AX71",
+    "series": "E46",
+    "engine": "M47",
+    "displacement": "320d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "320d_M47_TOUR"
+  },
+  {
+    "typkey": "AX72",
+    "series": "E46",
+    "engine": "M47",
+    "displacement": "320d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "320d_M47_TOUR"
+  },
+  {
+    "typkey": "DF51",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525td",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "525td_M_M51_LIM"
+  },
+  {
+    "typkey": "DF71",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "525tds_M_M51_LIM"
+  },
+  {
+    "typkey": "DF72",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "525tds_M_M51_LIM"
+  },
+  {
+    "typkey": "DF81",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "525tds_A_M51_LIM"
+  },
+  {
+    "typkey": "DF82",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "525tds_A_M51_LIM"
+  },
+  {
+    "typkey": "DG71",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "525tds_M_M51_TOUR"
+  },
+  {
+    "typkey": "DG72",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "525tds_M_M51_TOUR"
+  },
+  {
+    "typkey": "DG81",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "525tds_A_M51_TOUR"
+  },
+  {
+    "typkey": "DG82",
+    "series": "E39",
+    "engine": "M51",
+    "displacement": "525tds",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "525tds_A_M51_TOUR"
+  },
+  {
+    "typkey": "DL01",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "525d_A_M57_LIM"
+  },
+  {
+    "typkey": "DL02",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "525d_A_M57_LIM"
+  },
+  {
+    "typkey": "DL71",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "530d_M_M57_LIM"
+  },
+  {
+    "typkey": "DL72",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "530d_M_M57_LIM"
+  },
+  {
+    "typkey": "DL81",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "530d_A_M57_LIM"
+  },
+  {
+    "typkey": "DL82",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "530d_A_M57_LIM"
+  },
+  {
+    "typkey": "DL91",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "525d_M_M57_LIM"
+  },
+  {
+    "typkey": "DL92",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "525d_M_M57_LIM"
+  },
+  {
+    "typkey": "DM71",
+    "series": "E39",
+    "engine": "M47",
+    "displacement": "520d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "520d_M_M47_LIM"
+  },
+  {
+    "typkey": "DP01",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "525d_A_M57_TOUR"
+  },
+  {
+    "typkey": "DP02",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "525d_A_M57_TOUR"
+  },
+  {
+    "typkey": "DP71",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "530d_M_M57_TOUR"
+  },
+  {
+    "typkey": "DP72",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "530d_M_M57_TOUR"
+  },
+  {
+    "typkey": "DP81",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "530d_A_M57_TOUR"
+  },
+  {
+    "typkey": "DP82",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "530d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "530d_A_M57_TOUR"
+  },
+  {
+    "typkey": "DP91",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "525d_M_M57_TOUR"
+  },
+  {
+    "typkey": "DP92",
+    "series": "E39",
+    "engine": "M57",
+    "displacement": "525d",
+    "body": "TOUR",
+    "market": "EUR_RL",
+    "model": "525d_M_M57_TOUR"
+  },
+  {
+    "typkey": "DR71",
+    "series": "E39",
+    "engine": "M47",
+    "displacement": "520d",
+    "body": "TOUR",
+    "market": "EUR_LL",
+    "model": "520d_M_M47_TOUR"
+  },
+  {
+    "typkey": "ED71",
+    "series": "E46",
+    "engine": "M57TU",
+    "displacement": "330xd",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "330xd_M57/TU_LIM"
+  },
+  {
+    "typkey": "ED91",
+    "series": "E46",
+    "engine": "M57TU",
+    "displacement": "330d",
+    "body": "LIM",
+    "market": "EUR_LL",
+    "model": "330d_M57/TU_LIM"
+  },
+  {
+    "typkey": "ED92",
+    "series": "E46",
+    "engine": "M57TU",
+    "displacement": "330d",
+    "body": "LIM",
+    "market": "EUR_RL",
+    "model": "330d_M57/TU_LIM"
+  },
+  {
+    "typkey": "FA71",
+    "series": "E53",
+    "engine": "M57",
+    "displacement": "X5_3.0d",
+    "body": "SAV",
+    "market": "EUR_LL",
+    "model": "X5_3.0d_M57_GEFZG"
+  },
+  {
+    "typkey": "FA72",
+    "series": "E53",
+    "engine": "M57",
+    "displacement": "X5_3.0d",
+    "body": "SAV",
+    "market": "EUR_RL",
+    "model": "X5_3.0d_M57_GEFZG"
+  },
+  {
+    "typkey": "FB71",
+    "series": "E53",
+    "engine": "M57TU",
+    "displacement": "X5_3.0d",
+    "body": "SAV",
+    "market": "EUR_LL",
+    "model": "X5_3.0d_M57/TU_GEFZG"
+  },
+  {
+    "typkey": "FB72",
+    "series": "E53",
+    "engine": "M57TU",
+    "displacement": "X5_3.0d",
+    "body": "SAV",
+    "market": "EUR_RL",
+    "model": "X5_3.0d_M57/TU_GEFZG"
+  }
+]
